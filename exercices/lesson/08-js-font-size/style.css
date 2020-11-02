@@ -1,0 +1,26 @@
+.text-container
+{
+    position: relative;
+    padding: 10px 20px;
+    background: #eeeeee;
+}
+
+.font-size-controls
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.font-size-controls .less,
+.font-size-controls .more
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #cccccc;
+    text-decoration: none;
+    color: #ffffff;
+}

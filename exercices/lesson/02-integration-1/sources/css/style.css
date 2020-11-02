@@ -1,0 +1,280 @@
+.test
+{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 80%;
+    height: 100px;
+    background: linear-gradient(to left, blue, red);
+}
+
+
+body
+{
+    background: #edeff1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+.container
+{
+    width: 840px;
+    margin: 0 auto;
+}
+
+/************************************
+ * Header
+ ***********************************/
+.header
+{
+    position: relative;
+    height: 200px;
+    margin-bottom: 40px;
+    background: #ffffff;
+}
+
+.header .title
+{
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.header .title a
+{
+    text-decoration: none;
+}
+
+.header .navigation
+{
+    position: absolute;
+    top: 88px;
+    right: 20px;
+}
+
+.header .navigation .link
+{
+    text-decoration: none;
+    padding: 20px;
+}
+
+/************************************
+ * Articles
+ ***********************************/
+.articles
+{
+    margin-bottom: 80px;
+    font-size: 0;
+}
+
+.articles .article
+{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 390px;
+    margin-bottom: 50px;
+    background: #ffffff;
+    font-size: 14px;
+}
+
+.articles .article:nth-child(odd)
+{
+    margin-right: 40px;
+}
+
+.articles .article .thumbnail
+{
+    display: block;
+    width: 100%;
+}
+
+.articles .article .content
+{
+    padding: 40px;
+    line-height: 1.25em;
+}
+
+.articles .article .title
+{
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.articles .article .read-more
+{
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: #fc534c;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/************************************
+ * Footer
+ ***********************************/
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 40px;
+    background: #232729;
+    color: #ffffff;
+}
+
+/************************************
+ * Responsive
+ ***********************************/
+
+/* (max-width: 940px) */
+@media (max-width: 940px)
+{
+    .container
+    {
+        width: auto;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .header
+    {
+        height: 140px;
+    }
+
+    .header .title
+    {
+        top: 40px;
+    }
+
+    .header .navigation
+    {
+        top: 62px;
+    }
+
+    .header .navigation .link
+    {
+        padding: 15px;
+    }
+
+    .articles .article
+    {
+        width: calc(50% - 20px);
+    }
+
+    .footer
+    {
+        padding: 15px 20px;
+    }
+}
+
+/* (max-width: 740px) */
+@media (max-width: 740px)
+{
+    body
+    {
+        font-size: 13px;
+    }
+
+    .container
+    {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .header
+    {
+        margin-bottom: 20px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .header .title
+    {
+        position: static;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .header .navigation
+    {
+        position: static;
+        margin-left: -10px;
+    }
+
+    .articles
+    {
+        margin-bottom: 30px;
+    }
+
+    .articles .article
+    {
+        width: calc(50% - 10px);
+        height: 340px;
+        margin-bottom: 40px;
+        font-size: 13px;
+    }
+
+    .articles .article:nth-child(odd)
+    {
+        margin-right: 20px;
+    }
+
+    .articles .article .content
+    {
+        padding: 30px;
+    }
+
+    .footer
+    {
+        position: static;
+    }
+}
+
+/* (max-width: 460px) */
+@media (max-width: 460px)
+{
+    body
+    {
+        font-size: 12px;
+    }
+
+    .header
+    {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .header .navigation .link
+    {
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+
+    .articles .article
+    {
+        display: block;
+        width: auto;
+        height: auto;
+        font-size: 12px;
+    }
+
+    .articles .article:nth-child(odd)
+    {
+        margin-right: 0;
+    }
+
+    .articles .article .read-more
+    {
+        display: block;
+        position: static;
+        text-align: center;
+    }
+}
