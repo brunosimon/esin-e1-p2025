@@ -1,0 +1,77 @@
+.cube
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+}
+
+.cube *
+{
+    transform-style: preserve-3d;
+}
+
+.cube .pivot-y
+{
+    animation: cube-rotation-y 10s linear infinite;
+}
+
+@keyframes cube-rotation-y
+{
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.cube .pivot-x
+{
+    animation: cube-rotation-x 20s infinite;
+}
+
+@keyframes cube-rotation-x
+{
+    0% { transform: rotateX(0deg); }
+    25% { transform: rotateX(40deg); }
+    75% { transform: rotateX(-40deg); }
+    100% { transform: rotateX(0deg); }
+}
+
+.cube .face
+{
+    display: flex;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: #0000ff;
+    font-size: 60px;
+    font-family: Helvetica, Arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.cube .face.x-pos { transform: rotateY(90deg)  translateZ(200px); }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+.cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); }
+.cube .face.y-neg { transform: rotateX(90deg)  translateZ(200px); }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
+.cube .face.z-pos { transform:                 translateZ(200px); }
+
+.cube.gilded-blackstone .face.x-pos { background-image: url(./textures/gilded_blackstone.png) }
+.cube.gilded-blackstone .face.x-neg { background-image: url(./textures/gilded_blackstone.png) }
+.cube.gilded-blackstone .face.y-pos { background-image: url(./textures/gilded_blackstone.png) }
+.cube.gilded-blackstone .face.y-neg { background-image: url(./textures/gilded_blackstone.png) }
+.cube.gilded-blackstone .face.z-pos { background-image: url(./textures/gilded_blackstone.png) }
+.cube.gilded-blackstone .face.z-neg { background-image: url(./textures/gilded_blackstone.png) }
+
+.cube.crafting-table .face.x-pos { background-image: url(./textures/crafting_table_front.png) }
+.cube.crafting-table .face.x-neg { background-image: url(./textures/crafting_table_front.png) }
+.cube.crafting-table .face.y-pos { background-image: url(./textures/crafting_table_top.png) }
+.cube.crafting-table .face.y-neg { background-image: url(./textures/crafting_table_top.png) }
+.cube.crafting-table .face.z-pos { background-image: url(./textures/crafting_table_front.png) }
+.cube.crafting-table .face.z-neg { background-image: url(./textures/crafting_table_front.png) }

@@ -1,0 +1,125 @@
+/**
+ * General
+ */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #444444;
+}
+
+body
+{
+    background-color: #edeff1;
+}
+
+.container
+{
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Header
+ */
+.header
+{
+    position: relative;
+    height: 200px;
+    margin-bottom: 40px;
+    background: #ffffff;
+}
+
+.header .title
+{
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    font-size: 50px;
+}
+
+.header .links
+{
+    position: absolute;
+    top: 92px;
+    right: 20px;
+}
+
+.header .links a
+{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.header .links a:hover
+{
+    background: #eeeeee;
+}
+
+/**
+ * Articles
+ */
+.articles
+{
+    font-size: 0;
+}
+
+.articles .article
+{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 390px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+
+.articles .article:nth-child(odd)
+{
+    margin-right: 40px;
+}
+
+.articles .article .text
+{
+    padding: 40px;
+}
+
+.articles .article .title
+{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.articles .article a
+{
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    padding: 12px 15px;
+    background-color: #fc534c;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.articles .article a:hover
+{
+    background-color: #ff807b;
+}
+
+/**
+ * Footer
+ */
+.footer
+{
+    padding: 32px 40px;
+    background-color: #232729;
+    color: #ffffff;
+}
+
+.footer a
+{
+    color: #ffffff;
+}

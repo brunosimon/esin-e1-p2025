@@ -1,0 +1,105 @@
+body
+{
+    text-align: center;
+    /* background-image: url(https://bruno-simon.com/esin/e1-p2025/resources/image-1.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center center; */
+    /* background-size: contain; */
+
+    /* background: bottom left no-repeat url(https://bruno-simon.com/esin/e1-p2025/resources/image-1.jpg); */
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+h2
+{
+    text-transform: uppercase;
+}
+
+a
+{
+    text-decoration: overline;
+}
+
+.content p
+{
+    color: #ff0000;
+    line-height: 22px;
+    /* text-decoration: underline; */
+
+    /* width: 50%; */
+    /* min-width: 200px; */
+    /* max-width: 400px; */
+    /* height: 400px; */
+
+    /* padding-right: 30px; */
+    /* padding-left: 10px; */
+    /* padding-bottom: 20px; */
+    /* padding-top: 40px; */
+
+    /* padding: 40px 30px 20px 10px; */
+    /* padding: 40px 20px; */
+    /* padding: 20px; */
+
+    /* margin: 10px 20px 30px 40px; */
+    /* margin-top: 10px; */
+    /* margin-right: 20px; */
+    /* margin-bottom: 30px; */
+    /* margin-left: 40px; */
+
+    /* background: blue; */
+
+    border: #0000ff 4px solid;
+    /* border-color: #0000ff22; */
+    /* border-width: 5px; */
+    /* border-style: dashed; */
+}
+
+span
+{
+    /* display: block; */
+}
+
+p
+{
+    /* display: inline; */
+}
+
+.parent
+{
+    position: relative;
+    width: 50%;
+    height: 400px;
+    background: blue;
+    overflow: scroll;
+}
+
+.element-1
+{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    width: 200px;
+    height: 200px;
+    background: #ff0000;
+    z-index: 2;
+}
+
+.element-2
+{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+
+    width: 200px;
+    height: 200px;
+    background: #00ff00;
+    /* z-index: 100; */
+}
+

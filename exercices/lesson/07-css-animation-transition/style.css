@@ -1,0 +1,32 @@
+.container
+{
+    display: flex;
+    height: 240px;
+    margin-bottom: 20px;
+    background: #cccccc;
+    justify-content: center;
+    align-items: center;
+}
+
+.element
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: orange;
+}
+
+.transition
+{
+    left: 0px;
+    transition-property: left;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(0.95, 0, 0.05, 1);
+    /* transition-delay: 2s; */
+    /* transition: left 3s ease-out 2s; */
+}
+
+.container:hover .transition
+{
+    left: 300px;
+}

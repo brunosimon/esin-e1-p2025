@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intégration 2</title>
+    <link rel="stylesheet" href="sources/style/reset.css">
+    <link rel="stylesheet" href="sources/style/main.css">
+    <link rel="stylesheet" href="sources/style/bootstrap.css">
+</head>
+<body>
+
+    <!-- Landing -->
+    <section class="landing">
+
+        <header class="header centered">
+            <nav class="links-left">
+                <a href="#">Home</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+            </nav>
+            <span class="icon">
+                <svg width="27px" height="25px">
+                    <path fill-rule="evenodd" stroke="rgb(192, 160, 100)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none" d="M1.000,23.000 L1.000,4.000 L7.000,4.000 L9.000,1.000 L17.000,1.000 L19.000,4.000 L25.000,4.000 L25.000,23.000 L1.000,23.000 ZM13.000,10.000 C11.343,10.000 10.000,11.343 10.000,13.000 C10.000,14.657 11.343,16.000 13.000,16.000 C14.657,16.000 16.000,14.657 16.000,13.000 C16.000,11.343 14.657,10.000 13.000,10.000 Z"/>
+                </svg>
+            </span>
+            <div class="links-right">
+                <a href="#">
+                    <svg width="27px" height="16px">
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(108, 106, 104)" d="M26.171,10.761 L17.834,10.761 C17.834,13.664 20.666,13.481 20.666,13.481 C23.340,13.481 23.245,11.799 23.245,11.799 L26.077,11.799 C26.077,16.261 20.571,15.956 20.571,15.956 C13.965,15.956 14.389,9.981 14.389,9.981 C14.389,9.981 14.383,3.977 20.571,3.977 C27.083,3.977 26.171,10.761 26.171,10.761 ZM20.634,6.266 C18.149,6.266 17.802,8.675 17.802,8.675 L23.088,8.675 C23.088,8.675 23.120,6.266 20.634,6.266 ZM17.110,0.921 L23.748,0.921 L23.748,2.846 L17.110,2.846 L17.110,0.921 ZM13.754,11.016 C13.754,15.786 8.643,15.629 8.643,15.629 L3.960,15.629 L3.822,15.629 L0.271,15.629 L0.271,0.000 L3.822,0.000 L3.960,0.000 L8.643,0.000 C11.188,0.000 13.196,1.365 13.196,4.162 C13.196,6.959 10.741,7.136 10.741,7.136 C13.978,7.136 13.754,11.016 13.754,11.016 ZM8.643,2.778 L8.041,2.778 L3.960,2.778 L3.960,6.266 L8.353,6.266 C9.112,6.266 9.782,6.030 9.782,4.404 C9.782,2.778 8.643,2.778 8.643,2.778 ZM8.643,8.675 L3.960,8.675 L3.960,12.852 L8.427,12.852 C9.099,12.834 10.339,12.629 10.339,10.821 C10.339,8.654 8.643,8.675 8.643,8.675 Z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="7px" height="18px">
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(108, 106, 104)" d="M1.513,3.486 C1.513,3.940 1.513,5.964 1.513,5.964 L-0.000,5.964 L-0.000,8.995 L1.513,8.995 L1.513,18.000 L4.621,18.000 L4.621,8.995 L6.707,8.995 C6.707,8.995 6.902,7.542 6.997,5.953 C6.725,5.953 4.633,5.953 4.633,5.953 C4.633,5.953 4.633,4.190 4.633,3.881 C4.633,3.571 4.972,3.155 5.307,3.155 C5.641,3.155 6.346,3.155 7.000,3.155 C7.000,2.742 7.000,1.317 7.000,0.000 C6.128,0.000 5.135,0.000 4.698,0.000 C1.436,-0.000 1.513,3.033 1.513,3.486 Z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="19px" height="16px">
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(108, 106, 104)" d="M18.476,0.296 C17.722,0.758 16.887,1.094 15.999,1.276 C15.288,0.490 14.276,-0.000 13.155,-0.000 C11.002,-0.000 9.256,1.809 9.256,4.039 C9.256,4.356 9.291,4.665 9.357,4.960 C6.118,4.791 3.246,3.182 1.323,0.738 C0.988,1.334 0.796,2.028 0.796,2.769 C0.796,4.171 1.485,5.408 2.530,6.131 C1.891,6.109 1.291,5.927 0.765,5.624 L0.765,5.675 C0.765,7.632 2.108,9.264 3.891,9.637 C3.564,9.728 3.220,9.779 2.864,9.779 C2.612,9.779 2.369,9.752 2.130,9.705 C2.626,11.310 4.065,12.478 5.770,12.512 C4.437,13.595 2.755,14.240 0.930,14.240 C0.615,14.240 0.305,14.221 -0.000,14.185 C1.725,15.330 3.773,16.000 5.975,16.000 C13.144,16.000 17.065,9.844 17.065,4.505 L17.052,3.981 C17.816,3.414 18.478,2.702 19.000,1.893 C18.301,2.214 17.551,2.432 16.762,2.529 C17.567,2.029 18.184,1.237 18.476,0.296 Z"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="18px" height="18px">
+                        <path fill-rule="evenodd" opacity="0.502" fill="rgb(108, 106, 104)" d="M13.032,18.000 L4.967,18.000 C2.228,18.000 -0.000,15.772 -0.000,13.032 L-0.000,4.967 C-0.000,2.228 2.228,-0.000 4.967,-0.000 L13.032,-0.000 C15.772,-0.000 18.000,2.228 18.000,4.967 L18.000,13.032 C18.000,15.772 15.772,18.000 13.032,18.000 ZM16.403,13.032 L16.403,4.967 C16.403,3.109 14.891,1.597 13.032,1.597 L4.967,1.597 C3.109,1.597 1.597,3.109 1.597,4.967 L1.597,13.032 C1.597,14.891 3.109,16.403 4.967,16.403 L13.033,16.403 C14.891,16.403 16.403,14.891 16.403,13.032 L16.403,13.032 ZM13.833,5.350 C13.525,5.350 13.222,5.224 13.005,5.007 C12.787,4.789 12.661,4.487 12.661,4.179 C12.661,3.870 12.787,3.568 13.005,3.351 C13.223,3.132 13.525,3.008 13.833,3.008 C14.141,3.008 14.444,3.132 14.661,3.351 C14.879,3.568 15.004,3.870 15.004,4.179 C15.004,4.486 14.879,4.789 14.661,5.007 C14.443,5.224 14.141,5.350 13.833,5.350 ZM9.000,13.638 C6.442,13.638 4.362,11.557 4.362,9.000 C4.362,6.442 6.442,4.362 9.000,4.362 C11.557,4.362 13.638,6.442 13.638,9.000 C13.638,11.557 11.557,13.638 9.000,13.638 ZM9.000,5.959 C7.323,5.959 5.959,7.323 5.959,9.000 C5.959,10.677 7.323,12.041 9.000,12.041 C10.677,12.041 12.041,10.677 12.041,9.000 C12.041,7.323 10.677,5.959 9.000,5.959 Z"/>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <h1 class="title">Bruno Simon</h1>
+        <h2 class="sub-title">Photographe pro</h2>
+
+        <a href="#" class="button">Discover</a>
+
+    </section>
+
+    <!-- Works -->
+    <section class="works">
+
+        <div class="centered">
+    
+            <h3 class="block-title">Recent works</h3>
+
+            <section class="gallery">
+
+                <div class="row">
+                    <div class="column">
+                        <img
+                            src="https://picsum.photos/seed/f/770/770"
+                            width="770"
+                            height="770"
+                        >
+                    </div>
+                    <div class="column">
+                        <img
+                            src="https://picsum.photos/seed/d/370/370"
+                            width="370"
+                            height="370"
+                        >
+                        <img
+                            src="https://picsum.photos/seed/e/370/370"
+                            width="370"
+                            height="370"
+                        >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img
+                        src="https://picsum.photos/seed/m/1170/780"
+                        width="1170"
+                        height="780"
+                    >
+                </div>
+
+            </section>
+
+        </div>
+    
+    </section>
+
+    <!-- Articles -->
+    <section class="articles">
+
+        <div class="centered">
+
+            <!-- Article -->
+            <article class="article">
+
+                <!-- Picture -->
+                <img
+                    class="picture"
+                    src="https://picsum.photos/seed/p/585/400"
+                    width="585"
+                    height="400"
+                >
+
+                <!-- Text -->
+                <div class="text">
+                    <h3 class="block-title">B&W Collection</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dignissimos sint facilis, sequi deleniti perferendis, iste ipsum nisi dolorem consequuntur in et beatae rem recusandae quos at delectus quo veritatis.</p>
+                    <a class="button" href="#">More</a>
+                </div>
+
+            </article>
+
+            <!-- Article -->
+            <article class="article">
+
+                <!-- Picture -->
+                <img
+                    class="picture"
+                    src="https://picsum.photos/seed/q/585/400"
+                    width="585"
+                    height="400"
+                >
+
+                <!-- Text -->
+                <div class="text">
+                    <h3 class="block-title">Mother Earth</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dignissimos sint facilis, sequi deleniti perferendis, iste ipsum nisi dolorem consequuntur in et beatae rem recusandae quos at delectus quo veritatis.</p>
+                    <a class="button" href="#">More</a>
+                </div>
+
+            </article>
+
+            <!-- Article -->
+            <article class="article">
+
+                <!-- Picture -->
+                <img
+                    class="picture"
+                    src="https://picsum.photos/seed/r/585/400"
+                    width="585"
+                    height="400"
+                >
+
+                <!-- Text -->
+                <div class="text">
+                    <h3 class="block-title">Portraits</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dignissimos sint facilis, sequi deleniti perferendis, iste ipsum nisi dolorem consequuntur in et beatae rem recusandae quos at delectus quo veritatis.</p>
+                    <a class="button" href="#">More</a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+
+        <div class="centered">
+            <h3 class="block-title">Get in touch</h3>
+
+            <form action="#">
+                <input class="field" type="text" placeholder="Your Name">
+                <input class="field" type="email" placeholder="Email">
+                <textarea class="field last" placeholder="Message"></textarea>
+
+                <input class="button" type="submit" value="Send">
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+.container
+{
+    display: flex;
+    height: 240px;
+    margin-bottom: 20px;
+    background: #cccccc;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+}
+
+.container *
+{
+    transform-style: preserve-3d;
+}
+
+.element
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: orange;
+}
+
+.container:hover .element-1
+{
+    transform: scaleX(-2);
+}
+
+.container:hover .element-2
+{
+    transform: translateX(100%);
+}
+
+.container:hover .element-3
+{
+    transform: rotate(70deg);
+}
+
+.container:hover .element-4
+{
+    transform: skewX(35deg);
+}
+
+.container:hover .element-5
+{
+    transform-origin: 150% 150%;
+    transform: rotate(70deg);
+}
+
+.container:hover .element-6
+{
+    transform: rotate(70deg) translate(200px) rotate(70deg);
+}
+
+.container:hover .element-7
+{
+    transform: rotateX(45deg);
+}
+
+.container:hover .element-8
+{
+    transform: translate3d(-200px, 50px, 100px);
+}
+
+.container:hover .element-9
+{
+    transform: scale3d(1, 2, 3);
+}
+
+.container:hover .element-10
+{
+    transform: rotateY(130deg);
+    backface-visibility: hidden;
+}
+
+.container:hover .element-11
+{
+    transform: perspective(200px) rotateX(70deg);
+}
+
+.container .element-12 .inner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: red;
+    transform: translateZ(100px) rotate(-45deg);
+}
+
+.container .element-12 .inner .border-1
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 100%;
+    background: rgb(131, 27, 27);
+    transform-origin: 0 0;
+    transform: rotateY(90deg);
+}
+
+.container .element-12 .inner .border-2
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+    background: rgb(255, 59, 59);
+    transform-origin: 0 100%;
+    transform: rotateX(90deg);
+}
+
+.container:hover .element-12
+{
+    transform: rotateX(75deg);
+    transition: 3s transform;
+}

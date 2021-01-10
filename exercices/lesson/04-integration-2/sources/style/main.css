@@ -1,0 +1,243 @@
+/**
+ * General
+ */
+body
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #6c6a68;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.button
+{
+    display: inline-block;
+    height: auto !important;
+    padding: 16px 65px;
+    color: #c0a064;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 2px solid #c0a064;
+    cursor: pointer;
+}
+
+.centered
+{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.block-title
+{
+    margin-bottom: 52px;
+    text-align: center;
+    font-size: 36px;
+    color: #2c2a28;
+    font-family: Times, "Times New Roman", Georgia, serif; 
+}
+
+/**
+ * Landing
+ */
+.landing
+{
+    display: flex;
+    height: 100vh;
+    background-image: url('../images/landing-background.jpg');
+    background-size: cover;
+    background-position: center center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing .header
+{
+    position: absolute;
+    top: 22px;
+    left: calc(50% - 1180px / 2);
+    width: 1180px;
+}
+
+.landing .header .links-left
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.landing .header .links-left a
+{
+    display: inline-block;
+    padding: 15px;
+    color: #2c2a28;
+    font-weight: bolder;
+    opacity: 0.5;
+}
+
+.landing .header .links-left a:first-child
+{
+    opacity: 1;
+}
+
+.landing .header .icon
+{
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 26px / 2);
+}
+
+.landing .header .links-right
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.landing .header .links-right a
+{
+    display: inline-block;
+    padding: 15px 12px;
+}
+
+.landing .title
+{
+    margin-bottom: 25px;
+    font-family: Times, "Times New Roman", Georgia, serif; 
+    font-size: 60px;
+    color: #c0a064;
+}
+
+.landing .sub-title
+{
+    margin-bottom: 120px;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+/**
+ * Works
+ */
+.works
+{
+    background-color: #f8f6f4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.works .gallery
+{
+    font-size: 0;
+}
+
+.works .gallery .row .column
+{
+    display: inline-block;
+}
+
+.works .gallery .row .column:nth-child(1)
+{
+    margin-right: 30px;
+}
+
+.works .gallery .row .column:nth-child(2)
+{
+    width: 370px;
+}
+
+.works .gallery .row .column:nth-child(2) img:nth-child(1)
+{
+    margin-bottom: 30px;
+}
+
+.works .gallery .row:nth-child(1)
+{
+    margin-bottom: 30px;
+}
+
+/**
+ * Articles
+ */
+.articles
+{
+    padding: 120px 0;
+    border-bottom: 2px solid #e4e2e0;
+}
+
+.articles .article
+{
+    display: flex;
+}
+
+.articles .article:nth-child(even)
+{
+    flex-direction: row-reverse;
+}
+
+.articles .article .text
+{
+    padding: 55px;
+}
+
+.articles .article .text .block-title
+{
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.articles .article .text p
+{
+    padding-bottom: 55px;
+    line-height: 26px;
+}
+
+/**
+ * Contact
+ */
+.contact
+{
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.contact .centered
+{
+    width: 370px;
+}
+
+.contact form input,
+.contact form textarea
+{
+    display: block;
+    width: 100%;
+}
+
+.contact form textarea
+{
+    height: 180px;
+    resize: none;
+}
+
+.contact form .field
+{
+    padding: 28px 16px;
+    border-top: 1px solid #6c6a68;
+    border-right: 1px solid #6c6a68;
+    border-left: 1px solid #6c6a68;
+}
+
+.contact form .field::placeholder
+{
+    color: #a8a6a4;
+}
+
+.contact form .field.last
+{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #6c6a68;
+}

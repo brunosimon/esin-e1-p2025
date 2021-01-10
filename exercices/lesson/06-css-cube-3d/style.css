@@ -1,0 +1,39 @@
+.cube
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+}
+
+.cube *
+{
+    transform-style: preserve-3d;
+}
+
+.cube .face
+{
+    display: flex;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: #0000ff;
+    font-size: 60px;
+    font-family: Helvetica, Arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube .face.x-pos { transform: rotateY(90deg)  translateZ(200px); background: #ff0000; }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); background: #00ff00; }
+.cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); background: #0000ff; }
+.cube .face.y-neg { transform: rotateX(90deg)  translateZ(200px); background: #ffff00; }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); background: #00ffff; }
+.cube .face.z-pos { transform:                 translateZ(200px); background: #ff00ff; }
+
