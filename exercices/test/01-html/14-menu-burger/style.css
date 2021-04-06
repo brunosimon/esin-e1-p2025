@@ -1,0 +1,49 @@
+body
+{
+    font-family: Helvetica, Arial;
+    padding: 120px;
+}
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 40px;
+    background: #eee;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.menu.is-visible
+{
+    transform: translateX(0%);
+}
+
+.menu-trigger
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu-trigger .bar
+{
+    width: 30px;
+    height: 5px;
+    margin-bottom: 2px;
+}
+
+.menu-trigger .bar:nth-child(1) { background: #f1925a; }
+.menu-trigger .bar:nth-child(2) { background: #96e540; }
+.menu-trigger .bar:nth-child(3) { background: #c85353; }
+.menu-trigger .bar:nth-child(4) { background: #f1925a; }

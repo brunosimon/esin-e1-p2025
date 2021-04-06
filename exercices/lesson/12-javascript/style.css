@@ -1,0 +1,27 @@
+.cursor
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95px;
+    height: 95px;
+    background: url(./cursor.gif);
+    /* background: yellow; */
+    pointer-events: none;
+    will-change: transform;
+}
+
+.titi
+{
+    color: red;
+}
+
+.tata
+{
+    font-family: Helvetica, Arial;
+}
+
+.link
+{
+    text-decoration: none;
+}

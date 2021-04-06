@@ -1,3 +1,8 @@
+body
+{
+    overflow-x: hidden;
+}
+
 .container
 {
     display: flex;
@@ -18,15 +23,128 @@
 
 .transition
 {
-    left: 0px;
-    transition-property: left;
+    transform: translateX(0px);
+    transition-property: transform;
     transition-duration: 3s;
-    transition-timing-function: cubic-bezier(0.95, 0, 0.05, 1);
-    /* transition-delay: 2s; */
-    /* transition: left 3s ease-out 2s; */
+    transition-timing-function: cubic-bezier(0.88, 0.49, 0.68, 1.96);
+    transition-delay: 1s;
+    will-change: transform;
 }
 
 .container:hover .transition
 {
-    left: 300px;
+    transform: translateX(400px);
+}
+
+.animation
+{
+    animation-name: toto;
+    animation-duration: 3s;
+    /* animation-timing-function: linear; */
+    animation-delay: 3s;
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-play-state: paused; */
+    animation-fill-mode: both;
+}
+
+.container:hover .animation
+{
+    animation-play-state: running;
+}
+
+@keyframes toto
+{
+    0%   { left: 0px; width: 100px; }
+    50%  { left: 500px; width: 50px; background: green; }
+    70%  { left: 250px; width: 300px; background: red; }
+    100% { left: 400px; width: 50px; }
+}
+
+/**
+ * Equalizer
+ */
+.equalizer
+{
+    display: flex;
+    width: 200px;
+    height: 80px;
+}
+
+.equalizer .bar
+{
+    --margin: 2px;
+    --duration: 1s;
+    flex-grow: 1;
+    height: 100%;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
+    background: #ffffff;
+    animation-name: equalizer-bar-bounce;
+    animation-duration: var(--duration);
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    animation-play-state: paused;
+}
+
+.equalizer:hover .bar
+{
+    animation-play-state: running;
+}
+
+.equalizer .bar:nth-child(1)  { animation-delay: calc(var(--duration) * 0.4); }
+.equalizer .bar:nth-child(2)  { animation-delay: calc(var(--duration) * 0.9); }
+.equalizer .bar:nth-child(3)  { animation-delay: calc(var(--duration) * 0.3); }
+.equalizer .bar:nth-child(4)  { animation-delay: calc(var(--duration) * 0.0); }
+.equalizer .bar:nth-child(5)  { animation-delay: calc(var(--duration) * 0.6); }
+.equalizer .bar:nth-child(6)  { animation-delay: calc(var(--duration) * 0.8); }
+.equalizer .bar:nth-child(7)  { animation-delay: calc(var(--duration) * 0.2); }
+.equalizer .bar:nth-child(8)  { animation-delay: calc(var(--duration) * 0.5); }
+.equalizer .bar:nth-child(9)  { animation-delay: calc(var(--duration) * 0.7); }
+.equalizer .bar:nth-child(10) { animation-delay: calc(var(--duration) * 0.1); }
+
+@keyframes equalizer-bar-bounce
+{
+    from { transform: scaleY(1); }
+    to   { transform: scaleY(0.2); }
+}
+
+/**
+ * Menu
+ */
+.menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #dddddd;
+    padding: 50px;
+    transform: translateX(-100%);
+    transition: transform 0.5s cubic-bezier(0.5, 0.35, 0.1, 1);
+    will-change: transform;
+}
+
+.menu:hover
+{
+    transform: translateX(0);
+}
+
+.menu::after
+{
+    content: 'menu';
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    padding: 20px;
+    background: #eeeeee;
+    opacity: 1;
+    transition: opacity 0.2s;
+    will-change: opacity;
+}
+
+.menu:hover::after
+{
+    opacity: 0;
 }

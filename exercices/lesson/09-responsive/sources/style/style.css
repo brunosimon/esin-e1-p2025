@@ -1,0 +1,16 @@
+.toto
+{
+    width: 200px;
+    border: 20px solid blue;
+    padding: 50px; 
+    background: red;
+    box-sizing: border-box;
+}
+
+@media print
+{
+    ul
+    {
+        display: none;
+    }
+}

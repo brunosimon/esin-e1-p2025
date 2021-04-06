@@ -1,0 +1,296 @@
+/**
+ * General
+ */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #444444;
+}
+
+body
+{
+    background-color: #edeff1;
+}
+
+.container
+{
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * Header
+ */
+.header
+{
+    position: relative;
+    height: 200px;
+    margin-bottom: 40px;
+    background: #ffffff;
+}
+
+.header .title
+{
+    position: absolute;
+    top: 70px;
+    left: 35px;
+    font-size: 50px;
+}
+
+.header .links
+{
+    position: absolute;
+    top: 92px;
+    right: 20px;
+}
+
+.header .links a
+{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.header .links a:hover
+{
+    background: #eeeeee;
+}
+
+/**
+ * Articles
+ */
+.articles
+{
+    font-size: 0;
+}
+
+.articles .article
+{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 390px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+}
+
+.articles .article:nth-child(odd)
+{
+    margin-right: 40px;
+}
+
+.articles .article .text
+{
+    padding: 40px;
+}
+
+.articles .article .title
+{
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.articles .article a
+{
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    padding: 12px 15px;
+    background-color: #fc534c;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.articles .article a:hover
+{
+    background-color: #ff807b;
+}
+
+/**
+ * Footer
+ */
+.footer
+{
+    padding: 32px 40px;
+    background-color: #232729;
+    color: #ffffff;
+}
+
+.footer a
+{
+    color: #ffffff;
+}
+
+/**
+ * Responsive
+ */
+@media (max-width: 900px)
+{
+    .container
+    {
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .header
+    {
+        height: 160px;
+    }
+
+    .header .title
+    {
+        top: 45px;
+    }
+
+    .header .links
+    {
+        top: 72px;
+    }
+    
+    .header .links a
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .articles .article
+    {
+        width: calc((100% - 40px) / 2);
+        height: 360px;
+    }
+
+    .articles .article img
+    {
+        width: 100%;
+    }
+
+    .articles .article .text
+    {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .container
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .header
+    {
+        height: 120px;
+        margin-bottom: 20px;
+    }
+
+    .header .title
+    {
+        top: 35px;
+        left: 20px;
+        font-size: 40px;
+    }
+
+    .header .links
+    {
+        top: 52px;
+    }
+    
+    .header .links a
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .articles .article
+    {
+        width: calc((100% - 20px) / 2);
+        margin-bottom: 40px;
+    }
+
+    .articles .article:nth-child(odd)
+    {
+        margin-right: 20px;
+    }
+
+    .articles .article .text
+    {
+        padding: 20px;
+    }
+
+    .footer
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .header
+    {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header .title
+    {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .header .links
+    {
+        position: static;
+    }
+
+    .articles .article
+    {
+        height: auto;
+    }
+
+    .articles .article
+    {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .articles .article:nth-child(odd)
+    {
+        margin-right: 0;
+    }
+
+    .articles .article .text
+    {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .container
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .articles .article .text
+    {
+        padding-bottom: 30px;
+    }
+
+    .articles .article a
+    {
+        display: block;
+        position: static;
+        width: auto;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

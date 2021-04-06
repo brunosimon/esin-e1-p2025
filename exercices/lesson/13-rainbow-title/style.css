@@ -1,0 +1,9 @@
+html
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 50px;
+    font-family: Helvetica, Arial, sans-serif;
+}

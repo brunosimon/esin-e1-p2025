@@ -1,0 +1,100 @@
+.cube
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+}
+
+.cube *
+{
+    transform-style: preserve-3d;
+}
+
+.cube .pivot-y
+{
+    animation-name: cube-rotation-y;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes cube-rotation-y
+{
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.cube .pivot-x
+{
+    animation-name: cube-rotation-x;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes cube-rotation-x
+{
+    0%   { transform: rotateX(-35deg); }
+    50%  { transform: rotateX(35deg); }
+    100% { transform: rotateX(-35deg); }
+}
+
+.cube .shadow
+{
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 200px #00000099;
+    transform: rotateX(90deg) translateZ(-200px);
+    backface-visibility: hidden;
+}
+
+.cube .face
+{
+    display: flex;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    image-rendering: pixelated;
+    font-size: 60px;
+    font-family: Helvetica, Arial;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube .face.x-pos { transform: rotateY(90deg)  translateZ(200px); }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+.cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); }
+.cube .face.y-neg { transform: rotateX(90deg)  translateZ(200px); }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
+.cube .face.z-pos { transform:                 translateZ(200px); }
+
+.cube.jukebox .face.x-pos { background-image: url('textures/jukebox_side.png'); }
+.cube.jukebox .face.x-neg { background-image: url('textures/jukebox_side.png'); }
+.cube.jukebox .face.z-pos { background-image: url('textures/jukebox_side.png'); }
+.cube.jukebox .face.z-neg { background-image: url('textures/jukebox_side.png'); }
+.cube.jukebox .face.y-pos { background-image: url('textures/jukebox_side.png'); }
+.cube.jukebox .face.y-neg { background-image: url('textures/jukebox_top_off.png'); }
+
+.cube.gold-ore .face.x-pos { background-image: url('textures/gold_ore.png'); }
+.cube.gold-ore .face.x-neg { background-image: url('textures/gold_ore.png'); }
+.cube.gold-ore .face.z-pos { background-image: url('textures/gold_ore.png'); }
+.cube.gold-ore .face.z-neg { background-image: url('textures/gold_ore.png'); }
+.cube.gold-ore .face.y-pos { background-image: url('textures/gold_ore.png'); }
+.cube.gold-ore .face.y-neg { background-image: url('textures/gold_ore.png'); }
+
+.cube.beehive .face.x-pos { background-image: url('textures/beehive_front.png'); }
+.cube.beehive .face.x-neg { background-image: url('textures/beehive_front_honey.png'); }
+.cube.beehive .face.z-pos { background-image: url('textures/beehive_side.png'); }
+.cube.beehive .face.z-neg { background-image: url('textures/beehive_side.png'); }
+.cube.beehive .face.y-pos { background-image: url('textures/beehive_end.png'); }
+.cube.beehive .face.y-neg { background-image: url('textures/beehive_end.png'); }

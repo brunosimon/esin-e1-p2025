@@ -1,0 +1,53 @@
+@media (max-width: 1200px)
+{
+    .pushes .line
+    {
+        position: relative;
+    }
+
+    .pushes .line .illustration
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+    }
+
+    .pushes .line:nth-child(even) .illustration
+    {
+        left: 0;
+        right: auto;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .header
+    {
+        padding-left: 20px;
+    }
+    
+    .header .nav a
+    {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    .pushes .line
+    {
+        display: block;
+    }
+
+    .pushes .line .content
+    {
+        width: 100%;
+    }
+
+    .pushes .line .illustration
+    {
+        position: static;
+        width: 100%;
+    }
+}

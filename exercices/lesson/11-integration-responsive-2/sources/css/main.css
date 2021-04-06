@@ -1,0 +1,40 @@
+/**
+ * General
+ */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.main-button
+{
+    display: inline-block;
+    padding: 15px 35px 15px 35px;
+    background: #8162ff;
+    color: #ffffff;
+}
+
+/**
+ * Header
+ */
+.header
+{
+    display: flex;
+    height: 116px;
+    padding-left: 55px;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav .link
+{
+    padding: 15px;
+}

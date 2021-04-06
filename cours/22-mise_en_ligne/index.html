@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Cours 21 - Mise en ligne</title>
+        <meta name="description" content="">
+        <meta name="author" content="Bruno Simon">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="../src/reveal.js/css/reveal.css">
+        <link rel="stylesheet" href="../src/reveal.js/css/theme/orange.css" id="theme">
+        <!-- <link rel="stylesheet" href="../src/reveal.js/lib/css/highlight/railscasts.css"> -->
+        <!-- <link rel="stylesheet" href="../src/reveal.js/lib/css/highlight/github.css"> -->
+        <link rel="stylesheet" href="../src/custom/style.css">
+        <script>
+            document.write( '<link rel="stylesheet" href="../src/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+        <!--[if lt IE 9]>
+            <script src="../src/reveal.js/lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Code steps start -->
+        <link rel="stylesheet" href="../src/code-steps/prism-tomorrow.css">
+        <link rel="stylesheet" href="../src/code-steps/style.css">
+        <!-- Code steps end -->
+    </head>
+    <body>
+        <div class="reveal">
+            <div id="pagination"></div>
+            <div class="slides">
+                <section>
+                    <h1>Développement web</h1>
+                    <h3>Cours 21</h3>
+                    <ul>
+                        <li>site : <a target="_blank" href="http://bruno-simon.com/esin/e1-p2025/">http://bruno-simon.com/esin/e1-p2025/</a></li>
+                        <li>contact : <a target="_blank" href="mailto:bruno.simon1@exterieur.groupe-igs.fr">bruno.simon1@exterieur.groupe-igs.fr</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Mettre son site en ligne</h2>
+                </section>
+
+                <section>
+                    <p>Nous avons réalisé un petit site HTML / CSS, il est temps de le mettre en ligne</p>
+                </section>
+
+                <section>
+                    <h2>Hébergement</h2>
+                    <p>Pour que notre site soit accessible dans le monde entier, il va falloir le stoquer chez un hébergeur</p>
+                    <p>Ça revient à mettre les fichiers sur un ordinateur relié à Internet</p>
+                    <p>Lorsqu'un visiteur va taper l'URL du site, il va pointer sur cet ordinateur et ce dernier va renvoyer les fichiers</p>
+                    <p>Il en existe plusieurs types :</p>
+                </section>
+
+                <section>
+                    <small>Hébergement</small>
+                    <h2>Mutualisé</h2>
+                    <ul>
+                        <li>Faibles coûts (quelques dizaines d'€ par an)</li>
+                        <li>Partagé avec d'autres clients (inconnus)</li>
+                        <li>Performance limitée (une dizaine de visiteurs simultanés)</li>
+                        <li>Fonctionnalités limitées</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <small>Hébergement</small>
+                    <h2>Dédié</h2>
+                    <ul>
+                        <li>Coûts élevés (quelques centaines/milliers d'€ par an)</li>
+                        <li>Un serveur par client</li>
+                        <li>Très bonnes performances (plusieurs centaines de visiteurs simultanés)</li>
+                        <li>Fonctionnalités libres</li>
+                        <li>Difficile à gérer</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <small>Hébergement</small>
+                    <h2>Hybride / Virtuel</h2>
+                    <ul>
+                        <li>Moins coûteux</li>
+                        <li>Presque tous les avantages et inconvénients d'un dédié</li>
+                        <li>Un peu moins performant</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <small>Hébergement</small>
+                    <h2>Cloud</h2>
+                    <ul>
+                        <li>Prix variable</li>
+                        <li>Scalable</li>
+                        <li>Fiable</li>
+                        <li>Limité en fonctionnalités</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Il est aussi possible de sous-traiter l'hébergement par une agence qui s'occupera de trouver la meilleure offre et de la gérer pour vous</p>
+                    <ul>
+                        <li><a target="_blank" href="http://www.linkbynet.com/">LinkByNet</a></li>
+                        <li><a target="_blank" href="http://www.waycom.net/">Waycom</a></li>
+                    </ul>
+                    <p>Offre personnalisée en générale coûteuse</p>
+                </section>
+
+                <section>
+                    <p>Pour un site <span class="u">simple</span>, un hébergement mutualisé fait largement l'affaire</p>
+                    <p>Ce choix n'est pas définitif, il sera toujours possible de migrer vers une autre offre en temps voulu</p>
+                </section>
+
+                <section>
+                    <p>Souscrire à un hébergement mutualisé ne prend que quelques minutes (max quelques heures)</p>
+                </section>
+
+                <section>
+                    <h2>Facteurs de choix</h2>
+                    <p>Les différents hébergeurs vont vous proposer une multitude d'offres</p>
+                    <p>Vous allez devoir choisir selon votre besoin</p>
+                    <p>Mais aussi penser au long terme tout de suite</p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Système d'exploitation</h2>
+                    <p>Windows ou Linux</p>
+                    <p>Il ne s'agit pas de votre système, mais de celui de votre hébergement</p>
+                    <p>Prenez <span class="highlight">Linux</span></p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Nombre de noms de domaines</h2>
+                    <p>Correspond à l'adresse de votre site (ex : <a target="_blank" href="http://bruno-simon.com">bruno-simon.com</a>)</p>
+                    <p>Ne pas confondre avec le sous-domaine<br>(ex : <a target="_blank" href="http://bruno-simon.com">sous-domaine.bruno-simon.com</a>)</p>
+                    <p>Les sous-domaines sont en général gratuits et illimités</p>
+                    <p>Vous avez peut-être intérêt à avoir plusieurs nom de domaines tout de suite</p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Espace de stockage</h2>
+                    <p>Fonctionne comme le disque dur de votre ordinateur</p>
+                    <p>Si votre site n'a rien de spécial, n'importe quel espace suffira</p>
+                    <p>Si votre site contient des vidéos HD, une grande quantité d'images ou laisse la possibilité aux utilisateurs d'envoyer des fichiers, il faudra peut-être prévoir plus large</p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>RAM</h2>
+                    <p>Capacité à prendre en charge les visites</p>
+                    <p><span class="highlight">⚠️ Arnaque</span></p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Languages supportés</h2>
+                    <p>Si votre site utilise du PHP, il faut que le serveur le supporte</p>
+                    <p>Les offres comprennnent en général PHP, parfois Python et Ruby</p>
+                    <p>Il existe plusieurs versions de ces languages. Vérifiez que celle du site correspond à celle de l'hébergeur</p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>CDN</h2>
+                    <p>Content Delivery Network</p>
+                    <p>Duplication des contenus statiques du site (images, vidéos, ...) sur différents serveurs à travers le monde</p>
+                    <p>Permet d'avoir un site rapide quelque soit la position géographique</p>
+                    <p>Utile pour les sites internationaux</p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Nombre de bases de données</h2>
+                    <p>Si votre site utilise une base de données (<span class="highlight">SQL</span>)</p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Certificat SSL</h2>
+                    <p>Permet d'encrypter les requêtes</p>
+                    <p>Lorsque vous naviguez sur un site, tout ce que vous envoyez et recevez peut être intercepté facilement</p>
+                    <p>L'encryptage SSL permet d'éviter ça</p>
+                    <p>L'accès à votre site ne se fait plus par <span class="highlight">http://</span>, mais par <span class="highlight">https://</span></p>
+                    <p>C'est le cas de Facebook, Google, Twitter, Youtube</p>
+                    <p><img src="src/img/ssl-facebook.png" alt=""></p>
+                </section>
+
+                <section>
+                    <small>Facteurs de choix</small>
+                    <h2>Services annexes</h2>
+                    <p>Les hébergeurs vont essayer de vous vendre plein de services</p>
+                    <ul>
+                        <li>Boîte mail</li>
+                        <li>Bibliothèque d'images</li>
+                        <li>Outils de référencement</li>
+                        <li>Outils de monitoring</li>
+                        <li>CMS pré-installés</li>
+                        <li>...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Choix de l'hébergeur</h2>
+                    <p>Il existe de nombreux fournisseurs</p>
+                    <ul>
+                        <li><a href="https://www.planethoster.com/fr/Hebergements-World" target="_blank">PlanetHoster</a></li>
+                        <li><a href="https://www.o2switch.fr/hebergement-illimite/" target="_blank">O2Switch</a></li>
+                        <li><a href="https://fr.godaddy.com/hebergement-web/hebergement-web" target="_blank">GoDaddy</a></li>
+                        <li><a href="http://www.1and1.fr/hebergement-linux" target="_blank">1&1</a></li>
+                        <li><a href="https://www.ovh.com/fr/hebergement-web/" target="_blank">OVH</a></li>
+                        <li><a href="https://www.gandi.net/hebergement/simple?language=php&db=mysql" target="_blank">Gandi</a></li>
+                        <li>...</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>La suite du cours prendra comme exemple un hébergement mutualisé 1&1, mais elle est valable pour les autres hébergements</p>
+                    <p>Nous partons de l'idée que nous avons déjà souscris à l'offre</p>
+                </section>
+
+                <section>
+                    <h2>Nom de domaine</h2>
+                    <p><span class="highlight">https</span>://<span class="highlight">pmd-2022</span>.<span class="highlight">bruno-simon</span>.<span class="highlight">com</span><span class="highlight">/blog/</span></p>
+                    <ul>
+                        <li class="fragment">Protocol</li>
+                        <li class="fragment">Sous-domaine</li>
+                        <li class="fragment">Nom de domaine de second niveau (ou nom de domaine)</li>
+                        <li class="fragment">Nom de domaine de premier niveau (ou extension)</li>
+                        <li class="fragment">Chemin</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Nom de domaine</h2>
+                    <p>Certains hébergeur vous feront créer le nom de domaine directement durant l'inscription</p>
+                    <p>Le nom de domaine peut être pris à part de l'hébergement, mais ça complique souvent la tâche.</p>
+                </section>
+
+                <section>
+                    <h2>Nom de domaine</h2>
+                    <ul>
+                        <li>Connectez-vous sur votre <a href="https://www.1and1.fr/login" target="_blank">espace privé</a></li>
+                        <li>Allez dans la partie<br><img src="src/img/1and1-ndd-button.png" alt=""></li>
+                        <li>Cliquez sur <br><img src="src/img/1and1-step-ndd-buy-new.png" alt=""></li>
+                        <li>Suivez les étapes pour obtenir votre nom de domaine</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Nom de domaine</h2>
+                    <p>Un nom de domaine peut mettre plusieurs minutes ou plusieurs jours pour se mettre en place</p>
+                    <p>Ce délais change selon le pays</p>
+                    <p>On parle de <span class="highlight">propagation DNS</span>, c'est le temps que mettent les serveurs à travers le monde pour apprendre l'URL de votre site</p>
+                </section>
+
+                <section>
+                    <h2>Nom de domaine</h2>
+                    <p>Depuis peu, il en existe de nombreuses nouvelles extensions</p>
+                    <p>
+                        <span class="fragment">.buzz</span>
+                        <span class="fragment">.bar</span>
+                        <span class="fragment">.clothing</span>
+                        <span class="fragment">.guide</span>
+                        <span class="fragment">.club</span>
+                        <span class="fragment">.sexy</span>
+                        <span class="fragment">.xxx</span>
+                        <span class="fragment">.pizza</span>
+                        <span class="fragment">.beer</span>
+                        <span class="fragment">.vodka</span>
+                        <span class="fragment">.ninja</span>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Sous-domaines</h2>
+                    <p>En général illimités (ou presque) et gratuits</p>
+                    <p>Permet d'associer un site à un domaine<br>(ex : <a href="">blog.monsite.com</a> ou <a href="">forum.monsite.com</a>)</p>
+                    <p><span class="u">www</span> est un sous-domaine</p>
+                </section>
+
+                <section>
+                    <p>Dans le cadre du cours, nous allons utiliser le sous-domaine <a target="_blank" href="http://pmd-2022.bruno-simon.com">pmd-2022.bruno-simon.com</a> plutôt qu'un vrai domaine</p>
+                </section>
+
+                <section>
+                    <h2>FTP</h2>
+                    <p>Nous avons notre domaine, il faut maintenant transférer/<span class="u">uploader</span> notre site sur l'espace de stockage de notre hébergement</p>
+                    <p>On parle de FTP (File Transfer Protocol)</p>
+                </section>
+
+                <section>
+                    <small>FTP</small>
+                    <h2>Logiciel FTP</h2>
+                    <p>Nous allons avoir besoin d'un logiciel (ou <span class="u">client</span>)</p>
+                    <p><a href="https://filezilla-project.org/download.php?show_all=1" target="_blank">FileZilla</a> est le plus connu</p>
+                    <p>Il est gratuit et compatible avec <span class="highlight">Windows</span> et <span class="highlight">Mac</span></p>
+                </section>
+
+                <section>
+                    <img class="no-style" src="src/img/filezilla.png" alt="">
+                </section>
+
+                <section>
+                    <p>Nous allons avoir besoin des données de connexion<br>C'est l'hébergeur qui va vous les fournir</p>
+                    <ul>
+                        <li>Connectez-vous sur votre <a href="https://www.1and1.fr/login" target="_blank">espace privé</a></li>
+                        <li>Allez dans la partie<br><img src="src/img/1and1-step-access-ftp.png" alt=""></li>
+                        <li>Créer ou modifier un accès FTP<br><img src="src/img/1and1-step-access-ftp-create-button.png" alt=""></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>
+                            Choisissez un login et mot de passe
+                            <br><img src="src/img/1and1-step-access-ftp-create.png" alt="">
+                        </li>
+                    </ul>
+                    <p>À cet endroit, il est parfois possible d'assigner un accès FTP à un repertoire en particulier</p>
+                    <p>Utile si vous êtes plusieurs sur le même hébergement</p>
+                </section>
+
+                <section>
+                    <ul>
+                        <li>Hôte : home241521242.1and1-data.host</li>
+                        <li>Identifiant : u48598234-pmd-2022</li>
+                        <li>Mot de passe : Pmd-2022</li>
+                        <li>Port : 22</li>
+                    </ul>
+                    <p><img src="src/img/filezilla-quick-connect.png" alt=""></p>
+                </section>
+
+                <section>
+                    <p>Vous pouvez maintenant glisser les fichiers sur la partie de droite et attendre que les fichiers soient uploadés</p>
+                    <p>Votre site est en ligne : <a href="http://pmd-2022.bruno-simon.com" target="_blank">http://pmd-2022.bruno-simon.com</a></p>
+                </section>
+
+                <section>
+                    <p>La legislation s'applique au lieu d'hébergement</p>
+                    <p>Vous ne pouvez héberger n'importe quoi sur votre site</p>
+                </section>
+            </div>
+        </div>
+
+        <script src="../src/caniuse-embed.min.js"></script>
+        <script src="../src/reveal.js/lib/js/head.min.js"></script>
+        <script src="../src/reveal.js/js/reveal.js"></script>
+
+        <!-- Code steps start -->
+        <script src="../src/code-steps/prism.js" data-manual></script>
+        <!-- Code steps end -->
+
+        <script type="module" src="../src/custom/script-module.js"></script>
+    </body>
+</html>

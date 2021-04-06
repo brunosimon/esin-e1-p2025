@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>09 - Responsive</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="sources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="sources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="sources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="sources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="sources/favicons/safari-pinned-tab.svg" color="#8163cc">
+    <link rel="shortcut icon" href="sources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#8163cc">
+    <meta name="msapplication-config" content="sources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="sources/style/reset.css">
+    <link rel="stylesheet" href="sources/style/style.css">
+</head>
+<body>
+    <h1>Le titre</h1>
+    <h2>Un sous titre</h2>
+    <h3>Un tout petit titre</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nemo vero maxime. Officia maiores expedita odio, praesentium eligendi nobis aperiam illum modi iste consequuntur fuga laborum, voluptatibus facilis eos sunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore harum aut assumenda. Delectus quam perspiciatis, ipsam blanditiis sit, fugit, quod sed aperiam corporis hic iste suscipit aliquid sint corrupti.</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <div class="toto">
+        Kikoo
+    </div>
+
+    <img
+        width="100%"
+        src="sources/images/image-test-1280.png"
+        srcset="
+            sources/images/image-test-320.png 320w,
+            sources/images/image-test-640.png 640w,
+            sources/images/image-test-1280.png 1280w
+        "
+    >
+
+    <picture>
+        <source srcset="sources/images/image-test-320.png" media="(max-width: 320px)">
+        <source srcset="sources/images/image-test-640.png" media="(max-width: 640px)">
+        <source srcset="sources/images/image-test-1280.png" media="(max-width: 1280px)">
+        <img src="sources/images/image-test-1280.png" width="100%">
+    </picture>
+
+    <script src="sources/javascript/modernizr-custom.js"></script>
+</body>
+</html>

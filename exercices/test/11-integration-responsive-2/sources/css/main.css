@@ -1,0 +1,105 @@
+/**
+ * General
+ */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+p
+{
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1
+{
+    line-height: 1.25em;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0.75em;
+}
+
+h2
+{
+    line-height: 1.25em;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 0.75em;
+}
+
+.main-button
+{
+    padding: 15px 25px;
+    background: #AB68FF;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/**
+ * Header
+ */
+.header
+{
+    display: flex;
+    height: 116px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 20px;
+}
+
+.header .nav a
+{
+    display: inline-block;
+    padding: 20px;
+}
+
+/**
+ * Pushes
+ */
+.pushes
+{
+    background: #F1F1F2;
+}
+
+.pushes .line
+{
+    display: flex;
+}
+
+.pushes .line .content
+{
+    display: flex;
+    width: 50%;
+    padding-top: 6vw;
+    padding-right: 8vw;
+    padding-bottom: 6vw;
+    padding-left: 10vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pushes .line .content p
+{
+    margin-bottom: 3em;
+}
+
+.pushes .line .illustration
+{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pushes .line:nth-child(even)
+{
+    flex-direction: row-reverse;
+}
