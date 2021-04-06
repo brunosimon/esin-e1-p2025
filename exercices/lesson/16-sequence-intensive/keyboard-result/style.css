@@ -1,0 +1,10 @@
+.key
+{
+    display: inline-block;
+    background: lightgray;
+    padding: 8px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
