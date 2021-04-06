@@ -1,0 +1,17 @@
+.game
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: #dddddd;
+}
+
+.player
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: red;
+}
