@@ -1,0 +1,17 @@
+.game
+{
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    background: #cccccc;
+    width: 400px;
+    height: 400px;
+}
+
+.game .ball
+{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: red;
+}
