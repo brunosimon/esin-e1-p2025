@@ -1,0 +1,17 @@
+.block
+{
+    width: 100px;
+    height: 100px;
+    background: #cccccc;
+    margin: 20px;
+}
+
+.block.choose-by-1
+{
+    background: red;
+}
+
+.block.choose-by-2
+{
+    background: blue;
+}
