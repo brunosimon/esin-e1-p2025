@@ -1,0 +1,19 @@
+.game
+{
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    width: 400px;
+    height: 400px;
+    background: #cccccc;
+}
+
+.game .target
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+}
