@@ -1,3 +1,4 @@
+const game = document.querySelector('.game')
 const player = document.querySelector('.player')
 let playerX = 0
 let rightArrowDown = false
@@ -42,9 +43,9 @@ const tick = () =>
     {
         playerX = 0
     }
-    if(playerX > 400 - 60)
+    if(playerX > game.offsetWidth - 60)
     {
-        playerX = 400 - 60
+        playerX = game.offsetWidth - 60
     }
 
     player.style.transform = `translateX(${playerX}px)`

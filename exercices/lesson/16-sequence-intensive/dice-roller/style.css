@@ -1,0 +1,15 @@
+.dice
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-size: cover;
+}
+
+.dice.face-1 { background-image: url(./1.png); }
+.dice.face-2 { background-image: url(./2.png); }
+.dice.face-3 { background-image: url(./3.png); }
+.dice.face-4 { background-image: url(./4.png); }
+.dice.face-5 { background-image: url(./5.png); }
+.dice.face-6 { background-image: url(./6.png); }

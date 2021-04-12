@@ -1,7 +1,9 @@
 .game
 {
-    position: relative;
-    width: 400px;
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: 10vw;
+    width: 80vw;
     height: 400px;
     background: #dddddd;
 }
