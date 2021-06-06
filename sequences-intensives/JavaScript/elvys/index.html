@@ -1,0 +1,147 @@
+<html>
+<head><title>Jeu du pendu de Elvys</title>
+<meta name="Authors" content="Coding & design by Elvys">
+<script language="JavaScript">
+--
+function chargement()
+{
+window.form1.mot.value="";
+nbreperdu=0;
+window.status="Vous avez "+nbreperdu+" erreures";
+document.images[0].src="pendu"+nbreperdu+".JPG";
+document.form1.tester.value="";
+mot=mots[parseInt(Math.random()*10)];
+//alert(mot);
+for(i=0;i<mot.length;i++)
+document.form1.mot.value+="-";
+
+
+}
+
+
+
+function regle()
+{
+alert("Bienvenu(e) dans le jeu du pendu réalisé par Elvys Dieuveil NGUENFIRI BALE dans le carde de la semaine intensif.\n Les règles sont très facile.\n Vous inscrivez des lettres dans le cadre 'lettres à tester' afin de deviner le mot caché. Si la lettre écrite est dans le mot, elle apparaîtra. Si celle-ci n'est pas dans le mot, une faute sera comptée. Au bout de dix erreurs vous serez pendu 'Haut et court'. Vous avez également la possibilité d'inscrire le mot complet (en cas d'erreur, il vous sera compté une faute). \n Si vous ne voulez pas utiliser votre clavier, utiliser le 'pavé', il suffit tout simplement de cliquer sur la lettre désirée avec votre souris.\n Bon jeu à tous!");
+
+
+}
+
+
+
+
+
+
+function verif()
+{
+document.form1.tester.value=document.form1.tester.value+" "+document.form1.lettre.value;
+ajouter=false;
+//document.form1.mot.value="ok";
+//temp=document.form1.mot.value;
+
+if (document.form1.lettre.value.length<2)
+{for (i=0;i<document.form1.mot.value.length;i++)
+if (mot.charAt(i)==document.form1.lettre.value){ 
+document.form1.mot.value=document.form1.mot.value.substring(0,i)+document.form1.lettre.value+document.form1.mot.value.substring(i+1,document.form1.mot.value.length);//+temp.substr(i+1,temp.length);
+ajouter=true;}
+
+//alert("ok");
+//document.form1.mot.value=temp;
+if (document.form1.mot.value==mot){alert("Bravo tu as gagné !!!");if (confirm("Voulez-vous rejouer")==true)chargement();}
+}
+else if(document.form1.lettre.value==mot){document.form1.mot.value=mot;alert("Bravo tu as gagné !!!");ajouter=true;}
+if(ajouter==false)nbreperdu=parseInt(nbreperdu)+1;
+//alert(lettre);
+window.status="Vous avez "+nbreperdu+" erreures";
+document.images[0].src="pendu"+nbreperdu+".JPG";
+if(nbreperdu==10)
+    {
+    alert("Perdu!!! , le mot était "+mot);
+    if (confirm("Voulez-vous rejouer")==true)chargement();
+    }
+
+
+
+}
+
+
+
+//-->
+</script> 
+</head>
+
+<body onLoad="regle();">
+<form name="form1" action="javascript:if(nbreperdu>=10)alert('Tu as perdu ,tu ne peux plus jouer.');else verif();">
+<center><table  border="1">
+<tr>
+    <td rowspan="4">
+    Mot recherché:<br>
+    <input type="text" name="mot" readonly>
+    </td>
+    <td rowspan="3">
+    <img src="pendu0.jpg" width="374" height="271">
+    </td>
+</tr>
+<tr></tr><tr></tr>
+<tr>
+    
+
+
+
+
+    <td>
+    Lettres testées
+    <center><input type="text" name="tester" size="50" readonly></center>
+    </td>
+</tr>
+</table></center>
+<center>
+Entrer la lettre ou le mot que vous voulez essayer: <input type="text" name="lettre" onclick="javascript:document.form1.lettre.value=''" value="Lettre à tester">
+    <br>
+<input type="submit" value="valider"></center><br>
+
+</form><center>
+ou essayez en cliquant directement que la lettre que vous souhaitez</center>
+<script language="JavaScript">
+--
+mots==new Array(10);
+mots[0]="manger";
+mots[1]="bisou";
+mots[2]="amour";
+mots[3]="bonjour";
+mots[4]="journée";
+mots[5]="lettre";
+mots[6]="coeur";
+mots[7]="monde";
+mots[8]="triste";
+mots[9]="doucement";
+mots[10]="jouer";
+mots[11]="danser";
+mots[12]="nager";
+mots=[13]="salle";
+mots[14]="charger";
+mots[15]="tranche";
+chargement();
+
+    
+    
+    
+    
+//-->
+</script> 
+<center><table border="1" width="500">
+<tr>
+<td align="center" onClick="{document.form1.lettre.value='-';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">-</td><td align="center" onClick="{document.form1.lettre.value='a';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">a</td><td align="center" onClick="{document.form1.lettre.value='b';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">b</td><td align="center" onClick="{document.form1.lettre.value='c';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">c</td><td align="center" onClick="{document.form1.lettre.value='d';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">d</td><td align="center" onClick="{document.form1.lettre.value='e';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">e</td><td align="center" onClick="{document.form1.lettre.value='é';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">é</td><td align="center" onClick="{document.form1.lettre.value='è';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">è</td><td align="center" onClick="{document.form1.lettre.value='f';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">f</td><td align="center" onClick="{document.form1.lettre.value='g';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">g</td>
+
+</tr>
+<tr>
+<td align="center" onClick="{document.form1.lettre.value='h';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">h</td><td align="center" onClick="{document.form1.lettre.value='i';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">i</td><td align="center" onClick="{document.form1.lettre.value='j';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">j</td><td align="center" onClick="{document.form1.lettre.value='k';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">k</td><td align="center" onClick="{document.form1.lettre.value='l';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">l</td><td align="center" onClick="{document.form1.lettre.value='m';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">m</td><td align="center" onClick="{document.form1.lettre.value='n';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">n</td><td align="center" onClick="{document.form1.lettre.value='o';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">o</td><td align="center" onClick="{document.form1.lettre.value='p';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">p</td><td align="center" onClick="{document.form1.lettre.value='q';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">q</td>
+</tr>
+<tr>
+<td align="center" onClick="{document.form1.lettre.value='r';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">r</td><td align="center" onClick="{document.form1.lettre.value='s';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">s</td><td align="center" onClick="{document.form1.lettre.value='t';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">t</td><td align="center" onClick="{document.form1.lettre.value='u';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">u</td><td align="center" onClick="{document.form1.lettre.value='v';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">v</td><td align="center" onClick="{document.form1.lettre.value='w';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">w</td><td align="center" onClick="{document.form1.lettre.value='x';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">x</td><td align="center" onClick="{document.form1.lettre.value='y';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">y</td><td align="center" onClick="{document.form1.lettre.value='z';if(nbreperdu>=10)alert('Tu as perdu, tu ne peux plus jouer.');else verif();}">z</td><td></td>
+</tr>
+
+</table><a href="javascript:chargement();">Rejouer</a></center>
+
+</body>
+</html>

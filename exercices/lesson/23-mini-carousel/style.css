@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.mini-carousel
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg, #6941bf, #ffcd97);
+}
+
+.mini-carousel .large
+{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.mini-carousel .mover
+{
+    display: flex;
+    transition-property: transform;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.55, 0.01, 0.16, 1.01);
+    will-change: transform;
+}
+
+.mini-carousel .thumbnails
+{
+    font-size: 0;
+}
+
+.mini-carousel img
+{
+    box-shadow: 0 0 30px 0 #6941bf77;
+}

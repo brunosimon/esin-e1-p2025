@@ -1,0 +1,240 @@
+/*************Body***********/
+body
+{
+    position: relative;
+    font-size: medium;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: rgb(223, 223, 223);
+    color: #000000;
+}
+
+/**********title***********/
+.title
+{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+}
+
+/********score********/
+.score-board
+{
+    width: 50%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.player1, .player2, .score
+{
+    display:flex;
+    flex-direction: row;
+    line-height: 40px;
+
+}
+
+.score
+{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 3px;
+}
+
+.score-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.score-input
+{
+    margin: 10px;
+    height: 20px;
+    width: 70px;
+    border: none;
+    color: #000000;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/***********options********/
+
+.options-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.options
+{  
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.options button
+{
+    margin: 10px;
+    width: 100px;
+    color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border, color, .5s;
+}
+
+.options button:hover
+{
+    opacity: 1;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    transition: border, color, 1s;
+}
+
+.options button:focus
+{
+    outline: none;
+}
+
+/*************game-board**********/
+.game-board
+{
+    margin: 9px auto;
+    display: grid;
+    vertical-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #7c7575;
+    grid-gap: 2px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: rgba(161, 43, 165, 0.815) 0px 17px 50px;
+    
+}
+
+.game-board-container
+{
+    display: flex;
+    justify-content: center;
+    margin:20px;
+}
+
+.game-board div
+{
+    width: 130px;
+    height: 130px;
+    border: 1px solid rgb(5, 4, 4);
+    text-align: center;
+    line-height: 130px;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+/*************space***********/
+.space 
+{
+    background-color: #7c7575;
+    transition: background-color .5s;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .space:hover 
+{
+    background-color: rgba(255, 255, 255, 0.253);
+    transition: background-color .5s;
+    cursor: pointer;
+}
+
+#a1, #c1, #a3, #c3
+{
+    border: none;
+}
+
+#a2, #c2
+{
+    border-left: none;
+    border-right: none;
+    
+}
+
+#b1, #b3
+{
+    border-top:none;
+    border-bottom: none;
+}
+
+
+/***************icon*************/
+.icon
+{
+    
+    width: 30px;
+    height: auto;
+}
+
+.icon-btn
+{
+    margin-left:10px;
+    border:none;
+    background: none;
+}
+
+.icon-btn:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*****************game-message-box***********/
+
+.game-message-box
+{
+    width: 200px;
+    position: fixed;
+    top: calc(50% - 50px);
+    left: calc(50% - 130px);
+    background-color:rgb(223, 223, 223);
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    display:none;
+}
+
+.game-message-box h1
+{
+    color: #000000;
+    padding:10px;
+}
+
+.game-message-box button
+{
+    border: none;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    border-radius: 10%;
+}
+
+.game-message-box button:hover
+{
+    opacity: 0.7;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    transition: border, color, 1s;
+    border-radius: 16%;
+    cursor:pointer;
+}

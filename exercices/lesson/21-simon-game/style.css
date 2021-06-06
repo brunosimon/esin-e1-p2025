@@ -1,0 +1,95 @@
+html,
+body
+{
+    overflow: hidden;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.simon-game
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #350d42;
+    align-items: center;
+    justify-content: center;
+}
+
+.simon-game .pads
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.simon-game .pads::after
+{
+    content: '';
+    position: absolute;
+    top: calc(50% - 100px / 2);
+    left: calc(50% - 100px / 2);
+    width: 100px;
+    height: 100px;
+    background: #350d42;
+    border-radius: 50%;
+}
+
+.simon-game .pad
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 100%;
+    transform-origin: 100% 100%;
+    opacity: 0.6;
+}
+
+.simon-game .pad.top    { transform: rotate(45deg);  background: #63ff8e; }
+.simon-game .pad.right  { transform: rotate(135deg); background: #e0ff6d; }
+.simon-game .pad.bottom { transform: rotate(225deg); background: #ff135d; }
+.simon-game .pad.left   { transform: rotate(-45deg); background: #86f8ff; }
+
+.simon-game .pad.active
+{
+    opacity: 1;
+}
+
+.simon-game .pad.top.active    { box-shadow: 0 0 40px #63ff8e; }
+.simon-game .pad.right.active  { box-shadow: 0 0 40px #e0ff6d; }
+.simon-game .pad.bottom.active { box-shadow: 0 0 40px #ff135d; }
+.simon-game .pad.left.active   { box-shadow: 0 0 40px #86f8ff; }
+
+.simon-game .message
+{
+    position: absolute;
+    top: calc(50% - 45px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 0 0 20px #ffffff99;
+    opacity: 0;
+    transition: opacity 0.25s;
+    pointer-events: none;
+}
+
+.simon-game .message.active
+{
+    transition-duration: 0s;
+    opacity: 1;
+}
+
+.simon-game .message.start
+{
+    pointer-events: auto;
+    cursor: pointer;
+}

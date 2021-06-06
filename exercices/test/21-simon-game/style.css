@@ -1,0 +1,92 @@
+html,
+body
+{
+    overflow: hidden;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.simon-game
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: #eeeeee;
+}
+
+.simon-game .message
+{
+    display: none;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #00000033;
+    pointer-events: none;
+}
+
+.simon-game .message.start
+{
+    display: block;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.simon-game .pads
+{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    transform: rotate(45deg);
+}
+
+.simon-game .pad
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border-top-left-radius: 100%;
+    transform-origin: 100% 100%;
+    opacity: 0.3;
+}
+
+.simon-game .pad.top
+{
+    background: #2ee2ff;
+}
+
+.simon-game .pad.right
+{
+    transform: rotate(90deg);
+    background: #3aff80;
+}
+
+.simon-game .pad.bottom
+{
+    transform: rotate(180deg);
+    background: #fffa4f;
+}
+
+.simon-game .pad.left
+{
+    transform: rotate(-90deg);
+    background: #ff5656;
+}
+
+.simon-game .pad.active
+{
+    opacity: 1;
+}

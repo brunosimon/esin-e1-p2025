@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="source/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="source/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="source/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="source/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="source/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="apple-mobile-web-app-title" content="TIC TAC TOE">
+    <meta name="application-name" content="TIC TAC TOE">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./source/css/reset.css">
+    <link rel="stylesheet" href="./source/css/style.css">
+</head>
+<body>
+
+    <!----- title ------>
+    <h1 class="title">Tic Tac Toe</h1>
+
+    <!---- score-board ---->
+    <div class="score-board">
+        <div class="player1">
+            <button class="icon-btn" id="edit-player1"><img class="icon" src="source/image/pencil-solid-24.png"></button>
+            <h2 class="player1-name">Player 1</h2>
+        </div>
+    
+    <!---- score-container ---->
+    <div class="score-container"><p class="score" id="player1-score">0</p><p class="score"> - </p>
+        <p class="score" id="player2-score">0</p></div>
+        <div class="player2">
+            <h2 class="player2-name">Player 2</h2>
+            <button class="icon-btn" id="edit-player2"><img class="icon" src="source/image/pencil-solid-24.png"></button>
+        </div>
+    </div>
+
+    <!--- options-container --->
+    <div class="options-container">
+        <div class="options">
+            <button id="select-player">Play vs AI</button>
+            <button id="reset-score">Reset</button>
+        </div>
+    </div>
+    
+    <!--- game-board-container --->
+    <div class="game-board-container">
+        <div class="game-board">
+            <div class="space" id="a1"></div>
+            <div class="space" id="b1"></div>
+            <div class="space" id="c1"></div>
+            <div class="space" id="a2"></div>
+            <div class="space" id="b2"></div>
+            <div class="space" id="c2"></div>
+            <div class="space" id="a3"></div>
+            <div class="space" id="b3"></div>
+            <div class="space" id="c3"></div>
+        </div>
+    </div>
+    
+    <!--- game-message-box --->
+    <div class="game-message-box">
+        <h1 id="game-over-message">Round over</h1>
+        <button id="play-again">Play again</button>
+    </div>
+    
+    <!--- Fichier.js --->
+    <script src="./source/js/script.js"></script>
+</body>
+</html>

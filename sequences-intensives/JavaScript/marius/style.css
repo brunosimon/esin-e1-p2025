@@ -1,0 +1,50 @@
+h1:hover{color:red;}
+body
+{
+    background-color: yellowgreen;
+    
+}
+/* 
+{
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    position: centrer;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+} */
+
+header
+{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-size: 20px;
+    font-family: 'Helvetica, Arial, sans-serif ', cursive;
+}
+
+img{
+    width: 200px;
+    background: blue;
+    
+}
+
+button
+{
+    display: flex;
+    justify-content:space-around ;
+    align-items: absolute ;
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(4, 189, 189);
+    color: white;
+    cursor: pointer;
+
+}
+
+

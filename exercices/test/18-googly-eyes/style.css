@@ -1,0 +1,29 @@
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #fed420;
+}
+
+.eye
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background: #ffffff;
+    border: 8px solid #000000;
+    border-radius: 50%;
+}
+
+.eye .pupil
+{
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border-radius: 50%;
+}

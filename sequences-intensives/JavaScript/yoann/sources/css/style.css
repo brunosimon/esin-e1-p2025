@@ -1,0 +1,313 @@
+/* ELEMENT IN HTML */
+
+body
+{
+    position: relative;
+    background: burlywood;
+}
+
+.game
+{
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    width: 400px;
+    height: 400px;
+    background: no-repeat url(../images/pixel-1.jpg);
+    background-size: cover;
+}
+
+.game .player
+{
+    position: absolute;
+    top: 360px;
+    /* left: 200; */
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+    background: no-repeat url(../images/mario.svg);
+}
+
+.game .player-back
+{
+    position: absolute;
+    top: 360px;
+    /* left: 200; */
+    width: 40px;
+    height: 40px;
+    /* background: red; */
+    /* transform: rotateY(3.142rad); */
+    background: no-repeat url(../images/mario-back.svg);
+}
+
+.game .level-name
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    width: 400px;
+    height: 200px;
+    background: #2C2D34;
+    text-align: center;
+    font-family: 'Mario';
+    color: #FD0302;
+    -webkit-text-stroke: 1px white;
+}
+
+.game h1
+{
+    font-size: 50px;
+}
+
+.game .subtitle
+{
+    font-size: 20px;
+}
+
+.game-over-box
+{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(50vh - 90px);
+    left: calc(50vw - 200px);
+    width: 400px;
+    height: 150px;
+    background: saddlebrown;
+    text-align: center;
+    display: none;
+    /* clip-path: polygon(10% 0, 90% 0, 100% 25%, 100% 75%, 90% 100%, 10% 100%, 0 75%, 0 25%); */
+    border: 3px solid rgb(100, 100, 100);
+    font-family: 'Mario';
+    color: #FD0302;
+    -webkit-text-stroke: 1px rgb(217, 255, 0);
+    font-size: 25px;
+}
+
+.game-over-box .button-replay
+{
+    width: 100px;
+    height: 50px;
+    background: orange;
+    font-size: 15px;
+}
+
+.next-level-box
+{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(50vh - 90px);
+    left: calc(50vw - 200px);
+    width: 400px;
+    height: 150px;
+    background: purple;
+    text-align: center;
+    display: none;
+    border: 3px solid rgb(100, 100, 100);
+    font-family: 'Mario';
+    color: #FD0302;
+    -webkit-text-stroke: 1px rgb(217, 255, 0);
+    font-size: 25px;
+    padding: 1px;
+}
+
+
+
+.next-level-box .button-next
+{
+    width: 120px;
+    height: 50px;
+    background: orange;
+    font-size: 15px;
+
+}
+
+.timer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50vh - 260px);
+    left: calc(50vw - 150px);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    background: black;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: steelblue;
+    line-height: 15px;
+
+}
+
+
+.command
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 75vh;
+    left: 34vw;
+    width: 600px;
+    height: 200px;
+    background:rgb(212, 212, 212);
+    border: 3px solid rgb(100, 100, 100);
+}
+
+.command .command-text
+{
+    display: block;
+    font-family: 'Mario';
+    color: #FD0302;
+    -webkit-text-stroke: 1px rgb(217, 255, 0);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.winner-box
+{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: calc(50vh - 90px);
+    left: calc(50vw - 200px);
+    width: 400px;
+    height: 150px;
+    background: purple;
+    text-align: center;
+    display: none;
+    border: 3px solid rgb(100, 100, 100);
+    font-family: 'Mario';
+    color: #FD0302;
+    -webkit-text-stroke: 1px rgb(217, 255, 0);
+    font-size: 25px;
+    padding: 1px;
+}
+
+
+
+.winner-box .button-win
+{
+    width: 120px;
+    height: 50px;
+    background: orange;
+    font-size: 15px;
+
+}
+
+/* ELEMENT CREAT BY JAVASCRIPT */
+
+.visible
+{
+    display: inline-flex
+}
+
+.hide
+{
+    display: none;
+}
+
+.game .projectile-1
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background: BLUE; */
+    background: no-repeat url(../images/trump.svg);
+}
+.game .projectile-2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 60px;
+    background: no-repeat url(../images/syringe.svg);
+}
+.game .projectile-3
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 60px;
+    background: no-repeat url(../images/missile.svg);
+}
+.game .projectile-4
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/sword.svg);
+}
+.game .projectile-5
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/cleaver.svg);
+}
+.game .projectile-6
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/radioactive-barrel.svg);
+}
+.game .projectile-7
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/grenade.svg);
+}
+.game .projectile-8
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/Poison.svg);
+}
+.game .projectile-9
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/bomb.svg);
+}
+.game .projectile-10
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 40px;
+    background: no-repeat url(../images/smelly-poo.svg);
+}

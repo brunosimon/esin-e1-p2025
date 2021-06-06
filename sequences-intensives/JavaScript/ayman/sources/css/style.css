@@ -1,0 +1,729 @@
+body
+{
+    font-family: 'Saiyen', sans-serif;
+}
+
+button
+{
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+button:hover
+{
+    transform: scale(1.1);
+}
+
+.menuStart
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: #ffb651;
+}
+
+.menuStart.menuStartIsVisible
+{
+    z-index: 10;
+}
+
+.menuStart h1
+{
+    position: absolute;
+    font-size: 100px;
+    top: 20px;
+    left: calc(50vw - 300px);
+    -webkit-text-stroke: 3px black;
+}
+
+.instructions
+{
+    position: absolute;
+    top: 200px;
+    left: 63px;
+    width: 850px;
+    font-size: 24px;
+    line-height: 25px;
+    font-family: system-ui;
+}
+
+.instructions .title
+{
+    font-size: 35px;
+    font-family: 'Saiyen';
+    text-transform: uppercase;
+    color: #efdf2e;
+    -webkit-text-stroke: 2px black
+}
+
+.controls
+{
+    position: absolute;
+    top: 600px;
+    left: 63px;
+    width: 850px;
+    font-size: 24px;
+    font-family: system-ui;
+}
+
+.controls .title
+{
+    font-size: 35px;
+    font-family: 'Saiyen';
+    text-transform: uppercase;
+    color: #df1f2e;
+    -webkit-text-stroke: 2px black
+}
+
+.gameImage1
+{
+    position: absolute;
+    top: 170px;
+    right: 60px;
+    width: 300px;
+    height: auto;
+    border: solid 2px black;
+}
+
+.gameImage2
+{
+    position: absolute;
+    top: 300px;
+    right: 180px;
+    width: 300px;
+    height: auto;
+    border: solid 2px black;
+}
+
+.gameImage3
+{
+    position: absolute;
+    top: 430px;
+    right: 85px;
+    width: 300px;
+    height: auto;
+    border: solid 2px black;
+}
+
+.menuStart .buttonLaunch
+{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    bottom: 60px;
+    right: calc(50vw - 115px);
+    background-color: #df1f2e;
+    border: solid 2px black;
+    color: black;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.readyTimer
+{
+    position: absolute;
+    top: calc(30vh - 100px);
+    left: calc(50vw - 200px);
+    width: 400px;
+    height: 200px;
+    z-index: -5;
+    opacity: 0;
+}
+
+.readyTimerIsVisible
+{
+    opacity: 1;
+    z-index: 5;
+}
+
+.buttonReady
+{
+    position: absolute;
+    top: 100px;
+    left: 110px;
+    cursor: pointer;
+    font-size: 80px;
+    color: #efdf2e;
+    -webkit-text-stroke: 3px black;
+}
+
+.timer
+{
+    position: absolute;
+    top: 180px;
+    left: 185px;
+    font-size: 60px;
+    color: #df1f2e;
+    -webkit-text-stroke: 2px black;
+}
+
+
+.gameFinish
+{
+    position: absolute;
+    top: calc(35vh - 100px);
+    left: calc(50vw - 350px);
+    width: 700px;
+    height: 200px;
+    opacity: 0;
+    z-index: -5;
+}
+
+.gameFinish.gameFinishIsVisible
+{
+    opacity: 1;
+    z-index: 10;
+}
+
+.gameFinish p
+{
+    position: absolute;
+    top: 40px;
+    left: 9px;
+    font-size: 60px;
+    color: #efdf2e;
+    -webkit-text-stroke: 2px black;
+}
+
+.gameFinish button
+{
+    position: absolute;
+    top: 120px;
+    left: 220px;
+    font-size: 40px;
+    color: #df1f2e;
+    -webkit-text-stroke: 2px black;
+}
+
+.characterWinGame
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 200px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+}
+
+.characterWinGame .spriteWin
+{
+    position: absolute;
+    image-rendering: pixelated;
+    width: auto;
+    height: 100%;
+}
+
+@keyframes loop
+{
+    0% { transform: rotate(0deg); }
+    100% {transform: rotate(360deg); }
+}
+
+.background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/bg/bgEarth.png);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90px;
+    z-index: 1;
+    background: #004F9C;
+}
+
+.header h1
+{
+    position: absolute;
+    left: 70px;
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.header h1:hover
+{
+    transform: scale(1.1);
+}
+
+.header p
+{
+    position: absolute;
+    top: 7px;
+    right: 436px;
+    font-size: 30px;
+    color: #efdf2e;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+}
+
+.header .bgPreview
+{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+    right: 50px;
+    width: 400px;
+    height: 70px;
+}
+
+.header img
+{
+    cursor: pointer;
+    width: 112px;
+    height: 70px;
+    border: solid 2px black;
+    transition: transform 0.3s;
+}
+
+.header img:hover
+{
+    transform: scale(1.1);
+}
+
+.firstWord
+{
+    color: #EFDF2E;
+}
+
+.midWord
+{
+    color: #EE7B1B;
+}
+
+.lastWord
+{
+    color: #DF1F2E;
+}
+
+.menu
+{
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+}
+
+.menu.player1
+{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #fc8b23;
+    border-top: solid 5px black;
+    border-right: solid 2.5px black;
+}
+
+.menu.player2
+{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #2e9ef4;
+    border-top: solid 5px black;
+    border-left: solid 2.5px black;
+}
+
+.boostControls
+{
+    position: absolute;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+}
+
+.boostControls.player1
+{
+    right: 10px;
+}
+
+.boostControls.player2
+{
+    left: 10px;
+}
+
+.boostTouch
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background: #8a8a8a;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.boostA, .boostP
+{
+    background: #7efc6df3;
+}
+
+.score
+{
+    position: absolute;
+    font-size: 35px;
+    color: #ffffff;
+    top: calc(50% - 30px);
+}
+
+.score.player1
+{
+    right: 35px;
+}
+
+.score.player2
+{
+    left: 35px;
+}
+
+.keyPressNumber
+{
+    position: absolute;
+    font-size: 35px;
+    color: #ffffff;
+    top: 70%;
+}
+
+.keyPressNumber.player1
+{
+    right: 35px;
+}
+
+.keyPressNumber.player2
+{
+    left: 35px;
+}
+
+.gokuMenu
+{
+    position: absolute;
+    left: 0px;
+    border-right: solid 5px black;
+}
+
+.vegetaMenu
+{
+    position: absolute;
+    right: 0px;
+    border-left: solid 5px black;
+}
+
+/* GAME */
+.game
+{
+    position: relative;
+    top: 16vh;
+    left: calc(50vw - 300px);
+    width: 600px;
+    height: 200px;
+}
+
+/* BEAM */
+.game .beam
+{
+    position: absolute;
+    top: 100px;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    z-index: -5;
+}
+
+.game .beamIsVisible
+{
+    opacity: 1;
+    z-index: 5;
+}
+
+.game .laser
+{
+    position: absolute;
+    top: calc(50% - 25px);
+    width: 95%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.game .smallBeam
+{
+    position: absolute;
+    right: 95%;
+    background: linear-gradient(to right, #ffffff00, #ffffff, #ffffff, #ffffff00);
+}
+
+@keyframes smallBeamLoopPlayer1
+{
+    0% { transform: translateX(0%)}
+    100% { transform: translateX(calc(300%))}
+}
+
+@keyframes smallBeamLoopPlayer2
+{
+    0% { transform: translateX(calc(300%))}
+    100% { transform: translateX(0%)}
+}
+
+.laser .smallBeam:nth-child(1) { width: 20%; height: 20%; top: 50%; animation-duration: 0.8s; }
+.laser .smallBeam:nth-child(2) { width: 40%; height: 10%; top: 75%; animation-duration: 1.1s; }
+.laser .smallBeam:nth-child(3) { width: 30%; height: 30%; top: 5%; animation-duration: 1.5s; }
+.laser .smallBeam:nth-child(4) { width: 60%; height: 20%; top: 15%; animation-duration: 1s; }
+.laser .smallBeam:nth-child(5) { width: 80%; height: 15%; top: 60%; animation-duration: 2s; }
+.laser .smallBeam:nth-child(6) { width: 60%; height: 40%; top: 20%; animation-duration: 1.8s; }
+
+
+.laser .layer
+{
+    position: absolute;
+    width: 100%;
+    animation: layerLoop 0.3s infinite linear;
+}
+
+.laser .layer:nth-child(1)
+{
+    top: 10%;
+    height: 80%;
+    animation-duration: 0.6s;
+}
+
+.laser .layer:nth-child(2)
+{
+    top: 30%;
+    height: 40%;
+    opacity: 0.5;
+    animation-duration: 0.3s;
+}
+
+.laser .layer:nth-child(3)
+{
+    top: 45%;
+    height: 10%;
+    opacity: 0.6;
+    animation-duration: 0.15s;
+}
+
+/* PLAYER 1 BEAM */
+.game .beam.player1
+{
+    left: 0;
+    transform-origin: 0 50%;
+}
+
+.game .beam.player1 .laser
+{
+    background: #00d6ff;
+    box-shadow: 3px 0px 5px 2px #00d6ff;
+    clip-path: polygon(5% 10%, 15% 0%, 100% 0%, 100% 100%, 15% 100%, 5% 90%, 0% 70%, 0% 30%);
+}
+
+.game .beam.player1 .laser .smallBeam
+{
+    animation: smallBeamLoopPlayer1 1s infinite linear;
+}
+
+.game .beam.player1 .laser .layer:nth-child(1)
+{
+    background: #21dbff;
+    box-shadow: 0px 0px 20px 10px #21dbff;
+}
+
+.game .beam.player1 .laser .layer:nth-child(2)
+{
+    background: #48e1ff;
+    box-shadow: 0px 0px 10px 10px #48e1ff;
+}
+
+.game .beam.player1 .laser .layer:nth-child(3)
+{
+    background: #f7feff;
+    box-shadow: 0px 0px 5px 10px #f7feff;
+}
+
+/* PLAYER 2 BEAM */
+.game .beam.player2
+{
+    right: 0;
+    transform-origin: 100% 50%;
+}
+
+.game .beam.player2 .laser
+{
+    margin-left: 12px;
+    background: #cc00ff;
+    box-shadow: 3px 0px 5px 2px #cc00ff;
+    clip-path: polygon(85% 0%, 95% 15%, 100% 30%, 100% 70%, 95% 85%, 85% 100%, 0% 100%, 0% 0%);
+}
+
+.game .beam.player2 .laser .smallBeam
+{
+    animation: smallBeamLoopPlayer2 1s infinite linear;
+}
+
+.game .beam.player2 .laser .layer:nth-child(1)
+{
+    background: #d52bff;
+    box-shadow: 0px 0px 20px 10px #d52bff;
+}
+
+.game .beam.player2 .laser .layer:nth-child(2)
+{
+    background: #df5dff;
+    box-shadow: 0px 0px 10px 10px #df5dff;
+}
+
+.game .beam.player2 .laser .layer:nth-child(3)
+{
+    background: #fcf1ff;
+    box-shadow: 0px 0px 5px 10px #fcf1ff;
+}
+
+@keyframes layerLoop
+{
+    0% { transform: scaleY(1)}
+    20% { transform: scaleY(1.05)}
+    40% { transform: scaleY(0.85)}
+    60% { transform: scaleY(1.2)}
+    80% { transform: scaleY(0.95)}
+    100% { transform: scaleY(1)}
+}
+
+.game .impact
+{
+    position: absolute;
+    top: calc(50% - 100px);
+    width: 40px;
+    height: 200px;
+}
+
+.game .beam.player1 .impact
+{
+    right: 0;
+    background: #00d6ff;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 100% 100%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+.game .beam.player2 .impact
+{
+    left: 0;
+    background: #cc00ff;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+}
+
+.character
+{
+    position: absolute;
+    top: 125px;
+    width: 150px;
+    height: 150px;
+}
+
+.character .sprite
+{
+    position: absolute;
+    right: 5px;
+    image-rendering: pixelated;
+    width: auto;
+    height: 100%;
+}
+
+.character.player1
+{
+    left: -150px;
+}
+
+.character.player1 .spritePlayer1
+{
+    right: 5px;
+    bottom: 0px;
+}
+
+.character.player2
+{
+    right: -150px;
+}
+
+.character.player2 .spritePlayer2
+{
+    left: 5px;
+    bottom: 0px;
+}
+
+.result
+{
+    position: absolute;
+    top: calc(30vh - 100px);
+    left: calc(50vw - 350px);
+    width: 700px;
+    height: 200px;
+    opacity: 0;
+    z-index: -5;
+}
+
+.result.resultIsVisible
+{
+    opacity: 1;
+    z-index: 5;
+}
+
+.playerNumber
+{
+    position: absolute;
+    top: 120px;
+    left: 130px;
+    font-size: 50px;
+    color: #efdf2e;
+    -webkit-text-stroke: 2px black;
+}
+
+.buttonNextRound
+{
+    position: absolute;
+    top: 180px;
+    left: 218px;
+    font-size: 70px;
+    color: #df1f2e;
+    -webkit-text-stroke: 3px black;
+}
+
+@font-face
+{
+    font-family: 'Saiyen';
+    src: url(../fonts/Saiyen.ttf);
+}

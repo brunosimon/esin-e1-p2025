@@ -1,0 +1,25 @@
+.dice-roller
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.dice-roller .history .roll
+{
+    margin: 6px;
+    background: #fafafa;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+}
+
+.dice-roller .history .dice
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin: 6px;
+    background: #eeeeee;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+}

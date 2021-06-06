@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duel of Ki Blast</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./sources/css/reset.css">
+    <link rel="stylesheet" href="./sources/css/style.css">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="sources/favicon/apple-touch-icon.png?v=3ewk6oGQdR">
+    <link rel="icon" type="image/png" sizes="32x32" href="sources/favicon/favicon-32x32.png?v=3ewk6oGQdR">
+    <link rel="icon" type="image/png" sizes="16x16" href="sources/favicon/favicon-16x16.png?v=3ewk6oGQdR">
+    <link rel="manifest" href="sources/favicon/site.webmanifest?v=3ewk6oGQdR">
+    <link rel="mask-icon" href="sources/favicon/safari-pinned-tab.svg?v=3ewk6oGQdR" color="#5bbad5">
+    <link rel="shortcut icon" href="sources/favicon/favicon.ico?v=3ewk6oGQdR">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="sources/favicon/browserconfig.xml?v=3ewk6oGQdR">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <div class="menuStart menuStartIsVisible">
+
+        <h1><span class="firstWord">Duel</span> <span class="midWord">Of</span> <span class="lastWord">Ki Blast</span></h1>
+        
+        <div class="instructions">
+            <div class="title">Instructions :</div>
+            <div class="paragraph"><br>The game is played on the same computer and is played in 3 winning rounds.<br><br> The principle is simple: Player 1 controls Goku and Player 2 controls Vegeta.<br><br> To win, your KI must hit the opponent. To do this you need to smash your respectful keyboard keys.<br><br> If you are in trouble and the opponent takes the advantage, then you unlock new keys that have more power.<br><br> If you lose a round, you have a power bonus for the next round</div>
+        </div>
+
+        <div class="controls">
+            <div class="title">Controls :</div>
+            <div class="paragraph"><br>Player 1 : A > Z > E > R > T <br><br>Player 2 : Y < U < I < O < P</div>
+        </div>
+
+        <div class="gameImagesPreview">
+            <img class="gameImage1" src="./sources/images/miniGame1.PNG">
+            <img class="gameImage2" src="./sources/images/miniGame2.PNG">
+            <img class="gameImage3" src="./sources/images/miniGame3.PNG">
+        </div>
+
+        <button class="buttonLaunch">Start</button>
+    </div>
+
+    <div class="readyTimer readyTimerIsVisible">
+        <button class="buttonReady">Ready ?</button>
+        <p class="timer"></p>
+    </div>
+
+    <div class="gameFinish gameFinishPlayerIsVisible">
+        <p class="playerWin"></p>
+        <button class="buttonReload">Reload the game</button>
+        <div class="characterWinGame"><img class="spriteWin"></div>
+    </div>
+
+    <div class="result">
+        <p class="playerNumber"></p>
+        <button class="buttonNextRound">Next Round</button>
+    </div>
+
+    <div class="background"></div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1 class="titleReload"><span class="firstWord">Duel</span> <span class="midWord">Of</span> <span class="lastWord">Ki Blast</span></h1>
+        <div class="bgPreview">
+            <p>Change Map :</p>
+            <img class="bgEarth" src="./sources/images/bg/bgEarth.png">
+            <img class="bgKaio" src="./sources/images/bg/bgKaio.png">
+            <img class="bgSpace" src="./sources/images/bg/bgSpace.png">
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+
+        <div class="menu player1">
+            <div class="boostControls player1">
+                <div class="boostTouch boostA player1">A</div>
+                <div class="boostTouch boostZ player1">Z</div>
+                <div class="boostTouch boostE player1">E</div>
+                <div class="boostTouch boostR player1">R</div>
+                <div class="boostTouch boostT player1">T</div>
+            </div>
+            <div class="score player1">Score : 0</div>
+            <div class="keyPressNumber player1">Key press : 0 times</div>
+            <img class="gokuMenu" src="./sources/images/gokuMenu.png">
+        </div>
+
+        <div class="menu player2">
+
+            <div class="boostControls player2">
+                <div class="boostTouch boostY player2">Y</div>
+                <div class="boostTouch boostU player2">U</div>
+                <div class="boostTouch boostI player2">I</div>
+                <div class="boostTouch boostO player2">O</div>
+                <div class="boostTouch boostP player2">P</div>
+            </div>
+            <div class="score player2">Score : 0</div>
+            <div class="keyPressNumber player2">Key press : 0 times</div>
+            <img class="vegetaMenu" src="./sources/images/vegetaMenu.png">
+        </div>
+
+    </div>
+
+    <!-- GAME -->
+    <div class="game">
+
+        <div class="beam player1">
+            <div class="laser">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+            </div>
+            <div class="impact"></div>
+        </div>
+
+        <div class="character player1"><img class="sprite spritePlayer1" src="./sources/images/sprites/goku/spriteGoku1.png" width="auto" height="100%"></div>
+
+        <div class="beam player2">
+            <div class="laser">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+                <div class="smallBeam"></div>
+            </div>
+            <div class="impact"></div> 
+        </div>
+
+        <div class="character player2"><img class="sprite spritePlayer2" src="./sources/images/sprites/vegeta/spriteVegeta1.png"></div>
+    </div>
+
+    <script src="./sources/js/script.js"></script>
+
+</body>
+</html>

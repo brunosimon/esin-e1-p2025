@@ -1,0 +1,644 @@
+body
+{
+    width: 1600px;
+    height: 799px;
+    background-image: url(../images/image\ 1.png);
+    background-repeat: no-repeat;
+}
+
+.game
+{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    top: 90px;
+    left: 148px;
+    background: #000000;
+}
+
+.game .play-sound
+{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 20px;
+    right: 0;
+    background-image: url(../icone/sound.png);
+}
+
+.game .player-1
+{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    bottom: 5px;
+    left: 0;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    background:lightgray;
+}
+
+.game .player-2
+{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    top: 5px;
+    left: 0;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    background:lightgray;
+}
+
+.game .ball
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: aliceblue; 
+}
+
+.game .replay
+{
+    position: absolute;
+    width: 150px;
+    height: 72px;
+    top: 264px;
+    left: 225px;
+    background: #ffff00;
+    border-radius: 4px;
+    box-shadow: #ffffff;
+    color: #ffffff;
+    transform: translateY(-700%);
+}
+
+.game .replay.is-visible
+{
+    transform: translateY(0%);
+}
+
+.game .pause
+{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 60px;
+    right: 0;
+    background-image: url(../icone/pause.png);
+}
+
+.game .star
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+}
+.game .star.red{background: #ff0000;}
+.game .star.blue{background: #0000ff;}
+.game .star.purple{background: #ff00ff;}
+
+.timer
+{
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 85%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.interaction
+{
+    position: relative;
+    left: 350px;
+    top: -510px;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background: #717171;
+}
+
+.board
+{
+    position: relative;
+    left: 348px;
+    top: -510px;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background: #717171;
+}
+
+.board .divide
+{
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    top: 74px;
+    left: 150px;
+    background: #000000;
+}
+
+.board h1
+{
+    position: absolute;
+    font-size: 20px;
+    top: 8px;
+    left: 125px;
+    color: #000000;
+}
+
+.board h2
+{
+    position: relative;
+    top: 222px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.board .score-1{
+    position: absolute;
+    top: 74px;
+    left: 41px;
+}
+.board .score-2{
+    position: absolute;
+    top: 74px;
+    right: 41px;
+}
+
+.board .first
+{
+    position: absolute;
+    top: 127px;
+    left: 73px;
+}
+
+.board .second
+{
+    position: absolute;
+    top: 127px;
+    right: 73px;
+}
+
+.board .background
+{
+    position: absolute;
+    width: 300px;
+    height: 58px;
+    bottom: 0px;
+    background: #0C0C0C;
+}
+
+.board .tippin
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 37px;
+    top: 555px;
+    left: 50px;
+    background: #2A2A2A;
+}
+
+.menu-button
+{
+    position: fixed;
+    top: 90px;
+    right: 295px;
+    width: 40px;
+    height: 40px;
+    background: #000000;
+}
+
+.menu-button .bar
+{
+    display: block;
+    width: 20px;
+    height: 4px;
+    left: 1px;
+    margin: 2px;
+    margin-top: 4px;
+    margin-left: 10px;
+    background: #ffffff;
+}
+
+.audio-1
+{
+    position: absolute;
+    top: 20px;
+    width: 135px;
+    height: 25px;
+    left: 10px;
+}
+
+/* .menu
+{
+    position: fixed;
+    top: 0;
+    right: -600px;
+    width: 220px;
+    height: 100%;
+    padding: 40px;
+    background: #4d4b4b;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.menu .board
+{
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    bottom: -500px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(85, 81, 81);
+    color: #fff;
+}
+
+.menu.is-visible
+{
+    transform: translateX(0%);
+}
+
+.menu-button
+{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-button .bar
+{
+    display: block;
+    width: 38px;
+    height: 4px;
+    margin-bottom: 2px;
+    background: rgb(250, 250, 250);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nom prenom dev.web pas de underscore */

@@ -1,0 +1,22 @@
+.game{
+  position: absolute;
+  top: calc(50vh - 200px);
+  left: calc(50vw - 200px);
+  width:400px;
+  height:400px;
+  background:black; 
+}
+.ball{
+  position: absolute 
+  bottom= 0; 
+  left:0;
+  width: 10px;
+  height: 10px;
+  background: blue
+  transform:translateY(-50%,50%)
+}
+  .ball.red{background:red;} 
+  .ball.blue{background: blue;} 
+  .ball.purple{background: purple;} 
+  
+   

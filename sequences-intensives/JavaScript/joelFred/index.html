@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong game</title>
+    <link rel="stylesheet" href="./sources/outils/reset.css">
+    <link rel="stylesheet" href="./sources/outils/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./sources/icone/icon.png">
+</head>
+<body>
+   
+    <!-- the dinamyc part of web site, with the two players and the ball -->
+    <div class="game">
+        <div class="player-1"></div>
+
+        <div class="ball"></div>
+
+        <div class="player-2"></div>
+        <button class="play-sound"></button>
+        <button class="pause"></button>
+        <button class="replay">REPLAY</button>
+    </div>
+
+    <!-- count down before the part launch of the the game -->
+    <div class="timer"> Le jeu va commencer dans...</div>
+
+    <a href="#" class="menu-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+
+    <nav class="board">
+        <h1>score</h1>
+
+        <!-- the state of score -->
+        <h2 class="score-1">player 1</h2>
+        <div class="first">0</div>
+        <div class="divide"></div>
+        <h2 class="score-2">player 2</h2>
+        <div class="second">0</div>
+        
+        <!-- the conversations with historic -->
+        <h2>Conversation</h2>
+        <div class="background"></div>
+        <div class="tippin">
+            <p>ENTER TEXT</p>
+        </div>
+    </nav>
+
+    <!-- the of th whole game -->
+    <audio class="audio-1"
+        controls preload="auto" loop
+        src="./sources/audios/subway_surfers_ringtone.mp3">
+    </audio>
+
+
+    <audio class="audio-2" src="./sources/audios/contact_ringtone.mp3"></audio>
+    <audio class="audio-3" src="./sources/audios/tom_and_jerry_ringtone.mp3"></audio>
+    <audio class="audio-4" src="./sources/audios/birds_chirp_ringtone.mp3"></audio>
+    <audio class="audio-5" src="./sources/audios/contact_ringtone.mp3"></audio>
+    <audio class="audio-6" src="./sources/audios/piano_ringtone.mp3"></audio>
+
+    <script src="./sources/outils/script.js"></script>
+</body>
+</html>

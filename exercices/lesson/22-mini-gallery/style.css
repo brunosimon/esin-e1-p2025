@@ -1,0 +1,25 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.mini-gallery
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg, #6941bf, #ffcd97);
+}
+
+.mini-gallery .thumbnails
+{
+    font-size: 0;
+}
+
+.mini-gallery img
+{
+    box-shadow: 0 0 30px 0 #6941bf77;
+}
