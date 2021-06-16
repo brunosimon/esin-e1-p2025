@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.converter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(205deg, #ffda95, purple, #3d3f79);
+    font-family: 'Roboto', sans-serif;
+}
+
+.converter .title
+{
+    margin-bottom: 5vh;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: 5px 5px 20px #3d3f7988;
+}
+
+.converter .form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #3d3f7988;
+}
+
+.converter .form .input
+{
+    width: 240px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    border: 2px solid #eeeeee;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    color: #999999;
+    border-radius: 5px;
+    outline: none;
+}
+
+.converter .form .input::placeholder
+{
+    color: #cccccc;
+}
+
+.converter .form .rate
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 240px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    border: 2px solid #eeeeee;
+    font-size: 20px;
+    color: #999999;
+    border-radius: 5px;
+    outline: none;
+}
+
+.converter .form .output
+{
+    width: 240px;
+    height: 50px;
+    padding: 0 12px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    color: #999999;
+    border-radius: 5px;
+    outline: none;
+    background: linear-gradient(#222222, #333333);
+}
