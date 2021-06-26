@@ -43,9 +43,9 @@
 
                 <!-- SUMMARY -->
                 <section>
-                    <p>Sommaire</p>
                     <ul>
                         <li><a href="#what-it-is">Qu'est-ce que c'est ?</a></li>
+                        <li><a href="#terminal">Terminal</a></li>
                         <li><a href="#installation">Installation</a></li>
                         <li><a href="#github">GitHub</a></li>
                         <li><a href="#create-and-fetch-repository">Créer et récupérer un repository</a></li>
@@ -93,135 +93,29 @@
 
                 <section>
                     <p>Il existe des logiciels permettant d'utiliser Git, mais nous allons apprendre à l'utiliser en lignes de commande</p>
-                </section>
-
-                <!-- INSTALLATION -->
-                <section id="installation">
-                    <h2>Installation</h2>
-                </section>
-
-                <section>
-                    <p>Git fonctionne depuis le terminal</p>
-                    <p>Pour savoir si git est déjà installé, ouvrez le terminal et tapez <span class="hl">git --version</span></p>
-                    <p>Si la version s'affiche, passez l'étape d'installation</p>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/terminal-git-version.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <h3>Mac</h3>
-                    <ul>
-                        <li>Télécharger le fichier à partir de l'adresse suivante<br><a href="https://git-scm.com/download/mac" target="_blank">git-scm.com/download/mac</a></li>
-                        <li>Lancez le <span class="hl">.dmg</span></li>
-                        <li>Lancez le <span class="hl">.pkg</span></li>
-                        <li>Suivez l'installation</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h3>Windows</h3>
-                    <ul>
-                        <li>Télécharger le fichier à partir de l'adresse suivante<br><a href="https://git-scm.com/download/win" target="_blank">git-scm.com/download/win</a></li>
-                        <li>Lancez le <span class="hl">.exe</span></li>
-                        <li>Suivez l'installation</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/1.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/2.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/3.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/4.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/5.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/6.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/7.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/8.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/9.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/10.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>Git Bash devrait se lancer</p>
-                    <p>
-                        <img class="no-style" width="600" src="src/img/windows/11.png" alt="">
-                    </p>
-                </section>
-
-                <section>
-                    <p>Vous pouvez utiliser <span class="u">Git Bash</span> pour la suite du cours</p>
-                    <p>Celui-ci supporte les commandes UNIX de base (cd, ls, mkdir, etc.)</p>
-                    <p>Il existe des alternatives</p>
-                    <ul>
-                        <li><a href="http://cmder.net/" target="_blank">cmder</a></li>
-                    </ul>
+                    <p>Ces commandes doivent être exécutées dans un terminal</p>
                 </section>
 
                 <!-- TERMINAL -->
-                <section>
+                <section id="terminal">
                     <h2>Terminal</h2>
                 </section>
 
                 <section>
-                    <p>Pour pouvoir utiliser les fonctionnalités de la suite du cours, nous allons utiliser le Terminal</p>
-                    <p>Sur Mac, recherchez simplement l'application <span class="hl">Terminal</span></p>
+                    <p>Pour les Macs</p>
+                </section>
+
+                <section>
+                    <p>Recherchez l'application <span class="hl">Terminal</span></p>
                     <p>
                         <img src="src/img/search-terminal.jpg" alt="" width="550">
                     </p>
                 </section>
 
                 <section>
-                    <p>Voici votre terminal</p>
                     <p>
                         <img class="no-style" src="src/img/terminal.png" alt="" width="600">
-                        <br>Celui-ci fonctionne avec les commandes unix que nous allons voir plus tard
+                        <br>Celui-ci fonctionne avec les commandes Unix que nous allons voir plus tard
                     </p>
                 </section>
 
@@ -234,8 +128,44 @@
                 </section>
 
                 <section>
-                    <p>Sur PC, vous pouvez utiliser Git Bash (installé avec Git) ou <a href="http://cmder.net" target="_blank">cmder</a></p>
-                    <p>Alternativement, vous pouvez faire fonctionner les commandes unix directement dans l'<span class="hl">Invite de commandes</span> Windows en installant <a href="https://github.com/bmatzelle/gow/releases" target="_blank">Gow</a></p>
+                    <p>Sur PC</p>
+                    <p>Plusieurs options</p>
+                </section>
+
+                <section>
+                    <h3>Command Prompt</h3>
+                    <p>En français <span class="hl">Invite de Commandes</span></p>
+                    <p>Il s'agit du terminal historique de Windows</p>
+                    <p>Peu pratique</p>
+                    <p>Les commandes Unix ne fonctionnent pas</p>
+                </section>
+
+                <section>
+                    <h3>PowerShell</h3>
+                    <p>Il s'agit du nouveau terminal Windows</p>
+                    <p>Plus pratique et supporte les commandes Unix</p>
+                </section>
+
+                <section>
+                    <h3>Git Bash</h3>
+                    <p>Pourra être installé avec Git</p>
+                    <p>Supporte les commandes Unix</p>
+                </section>
+
+                <section>
+                    <h3>CMDER</h3>
+                    <p>Téléchargeable: <a href="http://cmder.net" target="_blank">cmder.net</a></p>
+                    <p>Support des commandes Unix</p>
+                </section>
+
+                <section>
+                    <p>Sur PC et Mac</p>
+                </section>
+
+                <section>
+                    <p>Alternativement, si vous utilisez VSCode, vous pouvez utiliser le terminal intégré</p>
+                    <p>Faites <span class="hl">CMD + J</span> pour le faire apparaître</p>
+                    <p>Ce terminal utilise en réalité une des différentes options vues précédemment, mais l'intégration à l'éditeur le rend plus pratique</p>
                 </section>
 
                 <section>
@@ -302,7 +232,7 @@ man clear
                             </div>
                         </li>
                         <li>
-                            <span class="hl">open</span> : ouvrir un dossier dans le finder
+                            <span class="hl">open</span> : ouvrir un dossier dans le finder (Mac)
                             <div class="code-steps" data-type="bash" data-trim>
                                 <pre contenteditable><code>
 open ./
@@ -318,15 +248,15 @@ open dossier-1
                     <h3>Commandes pratiques</h3>
 
                     <ul>
-                        <li><span class="hl">touch</span> : créer un fichier</li>
+                        <li><span class="hl">touch</span> : créer un fichier (Mac)</li>
                         <li><span class="hl">cp</span> : copier un fichier ou dossier</li>
                         <li><span class="hl">mv</span> : déplacer un fichier ou dossier</li>
                         <li><span class="hl">mkdir</span> : créer un dossier</li>
                         <li><span class="hl">rm</span> : supprimer un fichier</li>
                         <li><span class="hl">rmdir</span> : supprimer un dossier</li>
-                        <li><span class="hl">vim</span> : éditer un fichier avec Vim</li>
+                        <li><span class="hl">vim</span> : éditer un fichier avec Vim (Mac)</li>
                         <li>
-                            <span class="hl">say</span> : faire parler votre ordinateur
+                            <span class="hl">say</span> : faire parler votre ordinateur (Mac)
                             <div class="code-steps" data-type="bash" data-trim>
                                 <pre contenteditable><code>
 say -v Thomas "Coucou la famille"
@@ -346,6 +276,106 @@ say -v Thomas "Coucou la famille"
                         <li>Quand vous écrivez le nom d'un fichier ou dossier, tapez la touche <span class="hl">TAB</span> pour auto-compléter</li>
                         <li>Utilisez les flèches haut et bas pour naviguer dans l'historique des commandes</li>
                     </ul>
+                </section>
+
+                <!-- INSTALLATION -->
+                <section id="installation">
+                    <h2>Installer Git</h2>
+                </section>
+
+                <section>
+                    <p>Git fonctionne depuis le terminal</p>
+                    <p>Pour savoir si git est déjà installé, ouvrez le terminal et tapez <span class="hl">git --version</span></p>
+                    <p>Si la version s'affiche, passez l'étape d'installation</p>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/terminal-git-version.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Mac</h3>
+                    <ul>
+                        <li>Télécharger le fichier à partir de l'adresse suivante<br><a href="https://git-scm.com/download/mac" target="_blank">git-scm.com/download/mac</a></li>
+                        <li>Lancez le <span class="hl">.dmg</span></li>
+                        <li>Lancez le <span class="hl">.pkg</span></li>
+                        <li>Suivez l'installation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Windows</h3>
+                    <ul>
+                        <li>Télécharger le fichier à partir de l'adresse suivante<br><a href="https://git-scm.com/download/win" target="_blank">git-scm.com/download/win</a></li>
+                        <li>Lancez le <span class="hl">.exe</span></li>
+                        <li>Suivez l'installation et laissez les options par défaut</li>
+                    </ul>
+                </section>
+
+                <!-- <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/1.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/2.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/3.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/4.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/5.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/6.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/7.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/8.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/9.png" alt="">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/10.png" alt="">
+                    </p>
+                </section> -->
+
+                <section>
+                    <p>À la fin, vous pouvez choisir de lancer Git Bash</p>
+                    <p>
+                        <img class="no-style" width="600" src="src/img/windows/11.png" alt="">
+                    </p>
                 </section>
 
                 <!-- GITHUB -->
@@ -377,9 +407,7 @@ say -v Thomas "Coucou la famille"
                 </section>
 
                 <section>
-                    <p>Les repositories peuvent être publics ou privés</p>
-                    <p>Vous serez limités dans le nombre de repo privés sauf si vous <a href="https://github.com/pricing" target="_blank">payez</a> ($7/mois)</p>
-                    <p class="fragment">Sauf si vous êtes étudiants 🎉<br /><a href="https://education.github.com/pack" target="_blank">github.com/pricing</a></p>
+                    <p>Il existe <a href="https://github.com/pricing" target="_blank">différentes offres</a>, mais la version gratuite devraient amplement vous suffire</p>
                 </section>
 
                 <section>
@@ -395,6 +423,7 @@ say -v Thomas "Coucou la famille"
                     <p>
                         <a href="https://github.com/brunosimon" target="_blank"><img class="no-style" width="600" src="src/img/github-account.jpg" alt=""></a>
                     </p>
+                    <p>⚠️ Retenez bien votre pseudo, votre email et votre mot de passe</p>
                 </section>
 
                 <section>
@@ -436,7 +465,7 @@ git config --global user.email "votre@email"
                         <li>
                             Choisissez un nom de repo
                             <br>(minuscules, majuscules, tirets, underscore, chiffres)
-                            <br>(ex: hetic-p2023)
+                            <br>(ex: esin-e1-p2025-test)
                         </li>
                         <li>Cliquez sur <span class="hl">Create repository</span></li>
                     </ul>
@@ -458,13 +487,13 @@ git clone https://url-de-votre-repo
                                 </code></pre>
                             </div>
                             l'URL de votre repo est disponible sur la page du repo
-                            <br>(ex: <span class="u">https://github.com/brunosimon/hetic-p2023.git</span>)
+                            <br>(ex: <span class="u">https://github.com/brunosimon/esin-e1-p2025-test.git</span>)
                         </li>
                         <li>
                             Un dossier du nom du repo devrait avoir été créé, allez dedans
                             <div class="code-steps" data-type="bash" data-trim>
                                 <pre contenteditable><code>
-cd hetic-p2023 # par exemple
+cd esin-e1-p2025-test # par exemple
                                 </code></pre>
                             </div>
                         </li>
@@ -539,18 +568,16 @@ cd hetic-p2023 # par exemple
                 </section>
 
                 <section>
-                    <p>Tapez <span class="hl">git commit -m "Create index file"</span></p>
+                    <p>Tapez <span class="hl">git commit -m "Create home page"</span></p>
                     <p><span class="hl">-m</span> permet de renseigner directement le message associé au commit</p>
                 </section>
 
                 <section>
                     <p>Nous pouvons désormais envoyer notre commit sur le serveur</p>
                     <p>Tapez <span class="hl">git push</span></p>
-                    <p>
-                        À cette étape, le terminal devrait vous demander de rentrer votre pseudo et mot de passe GitHub
-                        <br><img width="600" src="src/img/terminal-github-login.jpg" alt="">
-                    </p>
-                    <p>Ces accès ne vous seront pas demandés par la suite</p>
+                    <p>À cette étape, le terminal devrait vous demander de vous authentifier</p>
+                    <p>Choisissez "Web browser" en appuyant sur la touche <span class="hl">1</span></p>
+                    <p>Cela devrait ouvrir une page web vous permettant d'autoriser <span class="hl">Git Credential Manager</span></p>
                 </section>
 
                 <section>
@@ -577,18 +604,22 @@ cd hetic-p2023 # par exemple
 
                 <section>
                     <p>Même si votre repo est publique, d'autres développeurs ne peuvent le modifier sans votre accord</p>
-                    <p>Pour autoriser un autre développeur à faire des modifications, il faut le rajouter dans les collaborateurs</p>
+                    <p>Pour autoriser un autre développeur à faire des modifications, il faut l'ajouter dans les collaborateurs</p>
+                </section>
+                
+                <section>
                     <ul>
                         <li>Aller sur la page de votre repo</li>
                         <li>Aller dans l'onglet <span class="hl">Settings</span></li>
-                        <li>Aller dans la partie <span class="hl">Collaborators</span></li>
+                        <li>Aller dans la partie <span class="hl">Manage access</span></li>
+                        <li>Click the <span class="hl">Invite a collaborator</span> button</li>
                         <li>Recherchez le pseudo de l'utilisateur Github et cliquez sur <span class="hl">Add collaborator</span></li>
                     </ul>
                 </section>
 
                 <section>
                     <p>Le développeur doit accepter l'invitation</p>
-                    <p>Il peut maintenant récupérer le projet <span class="hl">git clone https://github.com/brunosimon/hetic-p2023.git</a></p>
+                    <p>Il peut maintenant récupérer le projet <span class="hl">git clone https://github.com/brunosimon/esin-e1-p2025-test.git</a></p>
                     <p>Et faire des commits</p>
                 </section>
 
@@ -663,7 +694,7 @@ cd hetic-p2023 # par exemple
                 </section>
 
                 <section>
-                    <p>Dans l'exemple qui suit, nous avons décidé de rajouter une liste de nombres, mais un autre développeur a décidé de rajouter une liste de lettres</p>
+                    <p>Dans l'exemple qui suit, nous avons décidé d'ajouter une liste de nombres, mais un autre développeur a décidé de rajouter une liste de lettres</p>
                 </section>
 
                 <section>
@@ -756,12 +787,16 @@ cd hetic-p2023 # par exemple
                     <p>Lorsque vous mettez à disposition des autres un projet, vous souhaitez probablement garder un certain contrôle sur son utilisation ou au moins sur sa paternité</p>
                     <p>Cela est possible grâce aux licenses</p>
                     <p>Le site <a href="http://choosealicense.com/" target="_blank">choosealicense.com</a>, créé par GitHub, vous permet de choisir une license et vous accompagnera dans sa mise en place</p>
+                </section>
+
+                <section>
                     <p>Une des plus répandues est la license <span class="u">MIT</span> dont voici une <a href="https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html" target="_blank">explication ligne par ligne</a></p>
+                    <p>Une autre connue est <span class="u">CC0</span> permettant de <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr" target="_blank">dédiée l'oeuvre au domaine public</a></p>
                 </section>
 
                 <section>
                     <h3>Repo privé</h3>
-                    <p>Vous pouvez à tout moment décider de passer votre repository en privé pour ensuite rajouter des collaborateurs qui auront le droit de travailler dessus</p>
+                    <p>Vous pouvez à tout moment décider de passer votre repository en privé pour ensuite ajouter des collaborateurs qui auront le droit de travailler dessus</p>
                     <p>
                         <img class="no-style" width="160" src="src/img/github-repo-settings.jpg" alt="">
                         <br><img class="no-style" width="700" src="src/img/github-repo-private.jpg" alt="">
@@ -890,7 +925,7 @@ cd hetic-p2023 # par exemple
                             <td>créer une branche <span class="u">toto</span></td>
                         </tr>
                         <tr>
-                            <td class="no-wrap"><span class="hl">git checkout toto</span></td>
+                            <td class="no-wrap"><span class="hl">git switch toto</span></td>
                             <td>passer sur cette branche</td>
                         </tr>
                     </table>
@@ -914,7 +949,7 @@ cd hetic-p2023 # par exemple
                     <p>Merger les modification</p>
                     <table>
                         <tr>
-                            <td class="no-wrap"><span class="hl">git checkout master</span></td>
+                            <td class="no-wrap"><span class="hl">git switch master</span></td>
                             <td>retourner sur la branche <span class="u">master</span></td>
                         </tr>
                         <tr>

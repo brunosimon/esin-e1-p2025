@@ -33,11 +33,11 @@ const convert = () =>
 
     if(isNaN(result))
     {
-        $output.textContent = 'ERROR'
+        $output.textContent = '(┛◉Д◉)┛彡┻━┻'
     }
     else
     {
-        $output.textContent = result.toFixed(2)
+        $output.textContent = result
     }
 }
 
